@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% block content %}
+<div id="content-container">
+
+
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li>{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{%if user.is_authenticated%}
+
+    <form method="POST" action="{{BASE_URL}}/doula/save_project">{% csrf_token %}
+
+        <legend>Create Doula</legend>
+        <fieldset>
+        <p>
+            <label >Title:</label>
+            <input  id="title" name="title" type="text" placeholder="Project X44"  required="">
+        </p>
+        <p>
+            <label >Our story:</label>
+            <textarea  id="our_story" name="our_story" placeholder="My project is about...."></textarea>
+        </p>
+        <p>
+            <label >Link to image:</label>
+            <input  id="img_link" name="img_link" type="text" placeholder="https://www.example.com/image.jpg"  required="">
+        </p>
+        <p>
+            <label >Why we want a doula:</label>
+            <input  id="why_want_doula" name="why_want_doula" type="text" placeholder="" class="input-medium">
+        </p>
+        <p>
+            <label >Our  Doula:</label>
+            <textarea id="our_doula" name="our_doula" placeholder="Our Doula" required=""></textarea>
+        </p>
+        <p>
+            <label >Funding Amount needed:</label>
+            <input  id="funding_amount" name="funding_amount" type="text" placeholder="$ 0.00 USD"  required="">
+        </p>
+        <p>
+            <label >Campaign Days:</label>
+            <input  id="days_req" name="days_req" type="text" placeholder="60" required="">
+        </p>
+        <p>
+            <label >Misc (Only visible to admin):</label>
+            <input  id="misc" name="misc" type="text" placeholder="Misc"  required="">
+        </p>
+        <p>
+            <label >Link to Facebook:</label>
+            <input  id="link_fb" name="link_fb" type="text" placeholder="Facebook">
+        </p>
+        <p>
+            <label >Link to Twitter:</label>
+            <input  id="link_tw" name="link_tw" type="text" placeholder="Twitter">
+        </p>
+        <p>
+            <label >Link to Instagram:</label>
+            <input  id="link_inst" name="link_inst" type="text" placeholder="Instagram">
+        </p>
+        </fieldset>
+        <input type="submit" id="submit" name="submit" value="Create Doula"></input>
+
+
+    </form>
+
+{%else%}
+
+    <p class="lead">You must be <a href="{% url 'userena_signin' %}">logged in</a> to create a project.</p>
+
+{%endif%}
+
+</div>
+{% endblock %}

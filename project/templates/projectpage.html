@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load humanize %}
+{% block content %}
+
+<div id="content" xmlns="http://www.w3.org/1999/html">
+
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+{%if project%}
+    {%for item in project%}
+        <p>
+        <h2>{{item.title}}</h2>
+
+        <ul>
+            <li class="stats" id="backers">
+                {{item.totalpledgers}}
+                <span>backers</span>
+            </li>
+            <li class="stats">
+                {{item.totalpledgeamount|floatformat:2|intcomma}}
+                of  <span>{{item.funding_amount|floatformat:2|intcomma}}</span>
+            </li>
+            <!--
+            <li class="stats" id="days">
+                {{item.days_req}}
+                <span>days left</span>
+            </li>
+            -->
+            {% if user.is_authenticated and user.id == 1 %}
+                <li class="stats">
+                    Misc :
+                    <span>{{item.misc}}</span>
+
+                </li>
+                {% if item.is_review == 0 %}
+                    <li class="stats">
+                        <a href="{{BASE_URL}}/doula/confirm_project/{{item.pk}}" >Confirm doula</a>
+
+                    </li>
+                {% endif %}
+            {% endif %}
+
+
+
+
+        </ul>
+        </p>
+        <p>
+            <h2>Our Story</h2>
+            <article>{{item.our_story}}</article>
+        </p>
+
+    <!--
+
+            <form class="form-horizontal" method="POST" action="{{BASE_URL}}/doula/save_pledge" id="pledge" >{%csrf_token%}
+            <fieldset>
+            <p>
+            <input type="hidden" value="{{item.pk}}" name="pid">
+            <input type="hidden" value="{{user.id}}" name="uid">
+
+            <input type="text" placeholder="Enter pledge amount" name="amount">
+            <input type="text" placeholder="Comments" name="comments">
+            </p>
+            <input type="submit" value="Pledge">
+            </fieldset>
+            </form>
+    -->
+
+            <a href="{{BASE_URL}}/donation/{{item.pk}}" >>> PLEDGE</a>
+
+
+    {%if pledger%}
+    <p>
+        <br/>
+         List of Pledger
+            <br/>-------------
+        {%for item in pledger%}
+            <br/>
+            <br/>User :  <a href="{{BASE_URL}}/accounts/{{item.username}}" >{{item.username}}</a>
+            <br/>Pledge :  {{ item.amount_pledged|intcomma }}
+            <br/>
+            Comments : {{item.comments}}
+        {%endfor%}
+        <br/>-------------
+        <br/> End of pledger
+    </p>
+    {% endif %}
+
+
+
+
+        <p>
+            <form class="form-horizontal" method="POST" action="{{BASE_URL}}/doula/save_comment" id="comment" >{%csrf_token%}
+            <fieldset>
+                <p>
+                    <input type="hidden" value="{{item.pk}}" name="pid">
+                    {% if user.is_authenticated %}
+                        <input type="hidden" value="{{user.id}}" name="uid">
+                    {% else %}
+                        <input type="hidden" value="-1" name="uid">
+                    {% endif %}
+                    <input type="text" placeholder="Comments" name="comments">
+                </p>
+                    <input type="submit" value="Comment">
+            </fieldset>
+            </form>
+        </p>
+
+
+
+
+
+            {%if comments%}
+                <p>
+                <br/>
+                 List of comments
+                    <br/>-------------
+                {%for item in comments%}
+                    <br/>
+                    <br/>
+                    User :  <a href="{{BASE_URL}}/accounts/{{item.username}}" >{{item.username}}</a>
+                    <br/>
+                    Comments : {{item.comments}}
+                {%endfor%}
+                </p>
+            {% endif %}
+
+    {%endfor%}
+{% endif %}
+
+</div>
+{% endblock %}

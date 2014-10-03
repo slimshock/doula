@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% block content %}
+
+<div id="content" xmlns="http://www.w3.org/1999/html">
+
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+  {% for key, value in form.errors.items %}
+      <p>{{ value }}</p>
+  {% endfor %}
+
+{%if project%}
+{%for item in project%}
+
+  <form action="" method="post">{% csrf_token %}
+    <input type="hidden" value={{item.pk}} name="pid">
+    {% if user.is_authenticated %}
+        <input type="hidden" value="{{user.id}}" name="uid">
+    {% else %}
+        <input type="hidden" value="-1" name="uid">
+    {% endif %}
+    {% for field in form %}
+       <div class="form-row {% if field.errors %}errors{% else %}valid{% endif %}">
+                            {{ field.errors }}
+                        <p class="{% if field.field.required %}required{% else %}optional{% endif %}">
+                            <label for="{{ field.auto_id }}">{{ field.label }}</label>
+                            {{ field }}
+                            {% if field.help_text %}<span class="help-text">{{ field.help_text|linebreaksbr }}</span>{% endif %}
+                        </p>
+                        </div>
+    {% endfor %}
+    
+    <br>
+    <input type="submit" value="Charge Me!" />
+  </form>
+
+    <br/>
+    {% if not user.is_authenticated %}
+        What to <a href="{% url 'userena_signup' %}"><span>Signup</span></a> as Doula
+    {% endif %}
+
+
+{%endfor%}
+{% endif %}
+</div>
+{% endblock %}

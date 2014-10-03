@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load humanize %}
+{% block content %}
+<div id="content">
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {%if project%}
+        {%for item in project%}
+            {% if user.is_authenticated and user.id == 1 %}
+                    <a href="#">
+                        <img src="{{item.img_link}}">
+                    </a>
+
+                        <h2><a href="{{BASE_URL}}/doula/show/{{item.id}}">{{item.title}}</a></h2>
+                        <br/>by {%for item in username%}<a href="{{BASE_URL}}/accounts/{{item.username}}" >{{item.username}}{%endfor%}</a>
+                        <br/>{{item.project_desc}}
+                        <br/>
+                        <p>Pledged
+                            <span>
+                                {{item.totalpledgers}}
+                            </span>
+                        <br/>
+                        Pledged Amount
+                            <span>
+                                {{ item.totalpledgeamount|floatformat:2|intcomma }}
+                            </span>
+                        <br/>
+                        Goal
+                            <span class="val">{{ item.funding_amount|floatformat:2|intcomma }}</span>
+
+                        {% if item.is_review == 0 %}
+                            <br/>
+                            <a href="{{BASE_URL}}/doula/confirm_project/{{item.pk}}" >Confirm doula</a>
+                        {% endif %}
+                        </p>
+            {% else %}
+                {% if item.is_review %}
+                    <a href="#">
+                        <img src="{{item.img_link}}">
+                    </a>
+
+                        <h2><a href="{{BASE_URL}}/doula/show/{{item.id}}">{{item.title}}</a></h2>
+                        <br/>by {%for item in username%}<a href="{{BASE_URL}}/accounts/{{item.username}}" >{{item.username}}{%endfor%}</a>
+                        <br/>{{item.project_desc}}
+                        <br/>
+                        <p>Pledged
+                            <span>
+                                {{item.totalpledgers}}
+                            </span>
+                        <br/>
+                        Pledged Amount
+                            <span>
+                                {{item.totalpledgeamount|intcomma}}
+                            </span>
+                        <br/>
+                        Goal
+                            <span class="val">{{item.funding_amount|intcomma}}</span>
+                        </p>
+                {%endif%}
+            {%endif%}
+
+        <br/>
+        <br/>
+        <br/>
+        {%endfor%}
+    {%endif%}
+
+</div>
+{% endblock %}
