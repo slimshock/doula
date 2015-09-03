@@ -1,139 +1,266 @@
 {% extends "base.html" %}
+{% load i18n static %}
 {% load url from future %}
 {% load humanize %}
 {% block content %}
 
-<div id="content" xmlns="http://www.w3.org/1999/html">
-
         {% if messages %}
-            <ul class="messages">
+            <div class="alert alert-info">
                 {% for message in messages %}
-                    <li>{{ message }}</li>
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    {{ message }} <br/>
                 {% endfor %}
-            </ul>
+            </div>
         {% endif %}
+
 
 {%if project%}
     {%for item in project%}
-        <p>
-        <h2>{{item.title}}</h2>
-
-        <ul>
-            <li class="stats" id="backers">
-                {{item.totalpledgers}}
-                <span>backers</span>
-            </li>
-            <li class="stats">
-                {{item.totalpledgeamount|floatformat:2|intcomma}}
-                of  <span>{{item.funding_amount|floatformat:2|intcomma}}</span>
-            </li>
-            <!--
-            <li class="stats" id="days">
-                {{item.days_req}}
-                <span>days left</span>
-            </li>
-            -->
-            {% if user.is_authenticated and user.id == 1 %}
-                <li class="stats">
-                    Misc :
-                    <span>{{item.misc}}</span>
-
-                </li>
-                {% if item.is_review == 0 %}
-                    <li class="stats">
-                        <a href="{{BASE_URL}}/doula/confirm_project/{{item.pk}}" >Confirm doula</a>
-
-                    </li>
-                {% endif %}
-            {% endif %}
 
 
-
-
-        </ul>
-        </p>
-        <p>
-            <h2>Our Story</h2>
-            <article>{{item.our_story}}</article>
-        </p>
-
-    <!--
-
-            <form class="form-horizontal" method="POST" action="{{BASE_URL}}/doula/save_pledge" id="pledge" >{%csrf_token%}
-            <fieldset>
-            <p>
-            <input type="hidden" value="{{item.pk}}" name="pid">
-            <input type="hidden" value="{{user.id}}" name="uid">
-
-            <input type="text" placeholder="Enter pledge amount" name="amount">
-            <input type="text" placeholder="Comments" name="comments">
-            </p>
-            <input type="submit" value="Pledge">
-            </fieldset>
-            </form>
-    -->
-
-            <a href="{{BASE_URL}}/donation/{{item.pk}}" >>> PLEDGE</a>
-
-
-    {%if pledger%}
-    <p>
-        <br/>
-         List of Pledger
-            <br/>-------------
-        {%for item in pledger%}
-            <br/>
-            <br/>User :  <a href="{{BASE_URL}}/accounts/{{item.username}}" >{{item.username}}</a>
-            <br/>Pledge :  {{ item.amount_pledged|intcomma }}
-            <br/>
-            Comments : {{item.comments}}
-        {%endfor%}
-        <br/>-------------
-        <br/> End of pledger
-    </p>
-    {% endif %}
-
-
-
-
-        <p>
-            <form class="form-horizontal" method="POST" action="{{BASE_URL}}/doula/save_comment" id="comment" >{%csrf_token%}
-            <fieldset>
-                <p>
-                    <input type="hidden" value="{{item.pk}}" name="pid">
-                    {% if user.is_authenticated %}
-                        <input type="hidden" value="{{user.id}}" name="uid">
-                    {% else %}
-                        <input type="hidden" value="-1" name="uid">
+        <section id="fundraiser-single">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="h1">{{item.title}}</h1>
+                  <p class="organizer"><em>by</em> <strong>{{item.firstname}} {{item.lastname}}</strong></p>
+                </div>
+              </div>
+              <!-- /row -->
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="fundraiser-single-img">
+                    <img src="/media/{{item.img_link}}" alt="Image" class="img-responsive">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="fundraiser-single-moreinfo clearfix">
+                    <div class="goal">
+                    {% if user.is_authenticated and user.id == 1 %}
+                      {% if item.is_review == 0 %}
+                        <a href="{{BASE_URL}}/doula/confirm_project/{{item.pk}}" class="pull-right ghost-btn-white trending-btn">Confirm doula</a>
+                      {% endif %}
                     {% endif %}
-                    <input type="text" placeholder="Comments" name="comments">
-                </p>
-                    <input type="submit" value="Comment">
-            </fieldset>
-            </form>
-        </p>
 
+                      <h2>${{item.totalpledgeamount|intcomma}} <span class="currency">USD</span></h2>
+                      <span class="raised-goal">raised of ${{item.funding_amount|intcomma}} goal</span>
+                    </div>
+                    <div class="fundraiser-progress progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="{{item.percent}}" aria-valuemin="0" aria-valuemax="100" style="width: {{item.percent}}%;">
+                        <span class="sr-only">{{item.percent}}% Complete</span>
+                      </div>
+                    </div>
+                    <div class="fundraiser-percent-daysleft clearfix">
+                      <span class="percent pull-left">{{item.percent}}%</span>
+                      <!--<span class="daysleft pull-right">{{ item.startdate|timesince:item.expdate }} left</span>-->
+                      <span class="daysleft pull-right">{{ item.expd }} days left</span>
+                    </div>
+                    <div class="organizer-beneficiary">
+                      <p class="doula-organizer">
+                        <span><strong>Beneficiary:</strong> {{item.firstname}} {{item.lastname}}</span>
+                      </p>
+                      <p class="brief-description">{{item.our_doula|truncatechars:"50"}}</p>
+                      {% if not item.is_review == 0 %}
+                          <div class="donate-now">
+                            <a href="{{BASE_URL}}/donation/{{item.pk}}" class="btn btn-primary btn-lg">Give Now</a>
+                          </div>
+                      {% endif %}
+                      <div class="share">
+                        <h3 class="h3">Share This Project</h3>
+                        <a href="#" onclick="return popfbshare('http://www.facebook.com/share.php?')"><i class="glyphicomoon glyphicomoon-facebook"></i></a>
+                        <a href="#" onclick="return poptwshare('http://twitter.com/share')"><i class="glyphicomoon glyphicomoon-twitter"></i></a>
+                        <a href="#" onclick="return popgoogleshare('https://plus.google.com/share')"><i class="glyphicomoon glyphicomoon-googleplus"></i></a>
+                        <!--<a href="#"><i class="glyphicomoon glyphicomoon-pinterest"></i></a>-->
+                        <a href="mailto:moolahforthedoula@gmail.com"><i class="glyphicomoon glyphicomoon-mail"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /row -->
 
+            </div>
+            <!-- /container -->
+            <div id="doula-tabs">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <ul class="tab-nav clearfix">
+                      <li class="active"><a href="#details">Details</a></li>
+                      <li><a href="#supporters">Supporters <span class="count">{{item.pldgetotal}}</span></a></li>
+                      <li><a href="#updates">Updates <span class="count">{{item.updatetotal}}</span></a></li>
+                      <li><a href="#comments">Comments <span class="count">{{item.commenttotal}}</span></a></li>
+                    </ul>
+                    <div id="tabs-content">
+                      <div class="tab-content active clearfix" rel="details">
+                        <ul class="post-wrap">
+                            <li class="post-entry">
+                                <h3 class="post-username">About Us</h3>
+                                <div class="post-message">
+                                    <p class="pull-left">{{item.our_story}}</p>
+                                </div>
+                            </li>
+                            <li class="post-entry">
+                                <h3 class="post-username">Why we need doula</h3>
+                                <div class="post-message">
+                                    <p class="pull-left">{{item.why_want_doula}}</p>
+                                </div>
+                            </li>
+                            <li class="post-entry">
+                                <h3 class="post-username">About our doula</h3>
+                                <div class="post-message">
+                                    <p class="pull-left">{{item.our_doula}}</p>
+                                </div>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="tab-content clearfix" rel="supporters">
+                        <!-- <h2>Supporters</h2> -->
+                        <ul class="post-wrap">
 
+                            {%if pledger%}
+                                {%for item in pledger%}
 
+                                  <li class="post-entry" id="{{item.pk}}">
+                                    <span class="post-doante-date">{{ item.datecreated|date:'l, M d, Y' }}</span>
+                                    <!--<h3 class="post-username"><a href="{{BASE_URL}}/accounts/{{item.username}}" >{{item.username}}</a></h3>-->
+                                    <h3 class="post-username" style="color:#34AADC;">{{item.username}}</h3>
+                                    <div class="post-donate">
+                                      <span class="post-donate-label">Donated</span>
+                                      <span class="post-donate-amount">${{ item.amount_pledged|intcomma }}</span>
+                                      <div class="post-message">
+                                        <p>{{item.comments}}</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                {%endfor%}
+                            {% endif %}
+                        </ul>
+                          <!--
+                        <div class="pagination">
+                          <div class="pull-left">
+                            <a href="#" class="btn ghost-btn-white"><i class="glyphicomoon glyphicomoon-arrow-left4"></i> Previous</a>
+                          </div>
+                          <div class="pull-right">
+                            <a href="#" class="btn ghost-btn-white">Next <i class="glyphicomoon glyphicomoon-arrow-right4"></i></a>
+                          </div>
+                        </div>
+                        -->
+                      </div>
+                      <div class="tab-content clearfix" rel="updates">
+                        <ul class="post-wrap">
+                          {%if updates%}
+                                <h3 class="post-username">Thanks to all Supporters!</h3>
+                                {%for item in updates%}
+                                  <li class="post-entry" id="{{item.pk}}">
+                                    <span class="post-doante-date">{{ item.datecreated|date:'l, M d, Y' }}</span>
+                                    <div class="post-donate">
+                                      <div class="post-message">
+                                        <p>{{item.updates}}</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                {%endfor%}
+                           {% else %}
+                                <li class="post-entry">
+                                    <span class="post-doante-date"></span>
+                                    <div class="post-donate">
+                                      <div class="post-message">
+                                        <p>No update yet.</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                           {% endif %}
 
-            {%if comments%}
-                <p>
-                <br/>
-                 List of comments
-                    <br/>-------------
-                {%for item in comments%}
-                    <br/>
-                    <br/>
-                    User :  <a href="{{BASE_URL}}/accounts/{{item.username}}" >{{item.username}}</a>
-                    <br/>
-                    Comments : {{item.comments}}
-                {%endfor%}
-                </p>
-            {% endif %}
+                            {% if user.is_authenticated and user.id == item.userid %}
+                                <li class="post-entry">
+                                    <div class="post-donate">
+                                        <!--Comment Form-->
+                                        <form class="form-horizontal" method="POST" action="{{BASE_URL}}/doula/save_update" id="updates" >{%csrf_token%}
+                                            <fieldset>
+                                                    <input type="hidden" value="{{item.pk}}" name="pid">
+                                                    <input type="hidden" value="{{user.id}}" name="uid">
+                                                {% if not item.is_review == 0 %}
+                                                    <textarea name="updates" cols="30" rows="4" placeholder="Whats new?" class="form-control"></textarea>
+                                                    <button type="submit" class="btn btn-primary btn-green btn-lg" style="margin-top: 10px;">Post Update</button>
+                                                {% endif %}
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </li>
+                            {%endif%}
+
+                        </ul>
+                      </div>
+
+                      <div class="tab-content clearfix" rel="comments">
+                        <!-- <h2>Comments</h2> -->
+                        <ul class="post-wrap">
+                            {%if comments%}
+                                {%for item in comments%}
+                                  <li class="post-entry" id="{{item.pk}}">
+                                    <span class="post-doante-date">{{ item.datecreated|date:'l, M d, Y' }}</span>
+                                    <h3 class="post-username"><a href="{{BASE_URL}}/accounts/{{item.username}}" >{{item.username}}</a></h3>
+                                    <div class="post-donate">
+                                      <div class="post-message">
+                                        <p>{{item.comments}}</p>
+                                      </div>
+                                    </div>
+                                  </li>
+                                {%endfor%}
+                            {% endif %}
+
+                            <li class="post-entry">
+                                <div class="post-donate">
+                                    <!--Comment Form-->
+                                    <form class="form-horizontal" method="POST" action="{{BASE_URL}}/doula/save_comment" id="comment" >{%csrf_token%}
+                                        <fieldset>
+                                            <input type="hidden" value="{{item.pk}}" name="pid">
+                                            {% if user.is_authenticated %}
+                                                <input type="hidden" value="{{user.id}}" name="uid">
+                                            {% else %}
+                                                <input type ="hidden" value="-1" name="uid">
+                                            {% endif %}
+                                            {% if not item.is_review == 0 %}
+                                            <br/>
+                                                <textarea name="comments" cols="30" rows="4" placeholder="Comments" class="form-control"></textarea>
+                                                <button type="submit" class="btn btn-primary btn-green btn-lg" style="margin-top: 10px;">Comment</button>
+                                            {% endif %}
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </li>
+
+                        </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+
+                  </div>
+                </div>
+                <!-- /row -->
+              </div>
+              <!-- /container -->
+            </div>
+          </section>
+
+        <section id="spread-the-word">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <div class="share text-center">
+                    <h2>Spread The Word</h2>
+                    <a href="#" class="btn ghost-btn-share">Share On Twitter</a>
+                    <a href="#" class="btn ghost-btn-share">Share On Facebook</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
 
     {%endfor%}
 {% endif %}
 
-</div>
 {% endblock %}

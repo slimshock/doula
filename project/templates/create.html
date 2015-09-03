@@ -1,78 +1,125 @@
 {% extends "base.html" %}
 {% load url from future %}
 {% block content %}
-<div id="content-container">
+
+        {% if messages %}
+            <div class="alert alert-info">
+                {% for message in messages %}
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
 
 
-{% if messages %}
-    <ul class="messages">
-        {% for message in messages %}
-            <li>{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
+<section id="form-section" style="padding: 20px 0px;">
+    <div class="form-wrap">
+      <h1 class="h1">Create Doula Fundraiser</h1>
+      <div class="box">
 
 {%if user.is_authenticated%}
 
-    <form method="POST" action="{{BASE_URL}}/doula/save_project">{% csrf_token %}
 
-        <legend>Create Doula</legend>
-        <fieldset>
-        <p>
-            <label >Title:</label>
-            <input  id="title" name="title" type="text" placeholder="Project X44"  required="">
-        </p>
-        <p>
-            <label >Our story:</label>
-            <textarea  id="our_story" name="our_story" placeholder="My project is about...."></textarea>
-        </p>
-        <p>
-            <label >Link to image:</label>
-            <input  id="img_link" name="img_link" type="text" placeholder="https://www.example.com/image.jpg"  required="">
-        </p>
-        <p>
-            <label >Why we want a doula:</label>
-            <input  id="why_want_doula" name="why_want_doula" type="text" placeholder="" class="input-medium">
-        </p>
-        <p>
-            <label >Our  Doula:</label>
-            <textarea id="our_doula" name="our_doula" placeholder="Our Doula" required=""></textarea>
-        </p>
-        <p>
-            <label >Funding Amount needed:</label>
-            <input  id="funding_amount" name="funding_amount" type="text" placeholder="$ 0.00 USD"  required="">
-        </p>
-        <p>
-            <label >Campaign Days:</label>
-            <input  id="days_req" name="days_req" type="text" placeholder="60" required="">
-        </p>
-        <p>
-            <label >Misc (Only visible to admin):</label>
-            <input  id="misc" name="misc" type="text" placeholder="Misc"  required="">
-        </p>
-        <p>
-            <label >Link to Facebook:</label>
-            <input  id="link_fb" name="link_fb" type="text" placeholder="Facebook">
-        </p>
-        <p>
-            <label >Link to Twitter:</label>
-            <input  id="link_tw" name="link_tw" type="text" placeholder="Twitter">
-        </p>
-        <p>
-            <label >Link to Instagram:</label>
-            <input  id="link_inst" name="link_inst" type="text" placeholder="Instagram">
-        </p>
-        </fieldset>
-        <input type="submit" id="submit" name="submit" value="Create Doula"></input>
+       <form name="createDoula" onsubmit="return(validateDoulaForm());" role="form" action="{{BASE_URL}}/doula/save_project" method="post" enctype="multipart/form-data">
+            <fieldset>
+            {% csrf_token %}
 
+                <!--
+                {{form.as_ul}}
+                -->
 
-    </form>
+            <input  id="id_userid" name="userid" type="hidden" value="{{user.id}}">
+            <input  id="id_days_req" name="days_req" type="hidden" value="60">
+
+            <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_title">* Title</label> <span style="float: right;" id="title_error"></span>
+              <input  id="id_title" name="title" class="form-control" type="text" placeholder="Project Title">
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_our_story">* Our Story</label><span style="float: right;" id="our_story_error"></span>
+              <textarea  id="id_our_story" name="our_story" cols="30" rows="4" class="form-control" placeholder="Our story..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_img_link">* Upload any relevant photo</label><span style="float: right;" id="img_link_error"></span>
+              <input type="file" id="id_img_link" name="img_link" required="">
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_why_want_doula">* Why we want a Doula</label><span style="float: right;" id="why_want_doula_error"></span>
+              <textarea  id="id_why_want_doula" name="why_want_doula" cols="30" rows="4" placeholder="" class="form-control"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_our_doula">* Our Doula</label><span style="float: right;" id="our_doula_error"></span>
+              <textarea id="id_our_doula" name="our_doula" cols="30" rows="4" placeholder="Our Doula" class="form-control"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_funding_amount">* Funding Amount Needed</label><span style="float: right;" id="funding_amount_error"></span>
+              <input  id="id_funding_amount" name="funding_amount" type="text" placeholder="$0.00 USD" class="form-control">
+            </div>
+          </div>
+
+<!--
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_misc">Misc (What you type here will be visible to site admin)</label><span style="float: right;" id="misc_error"></span>
+              <input  id="id_misc" name="misc" type="text" placeholder="" class="form-control">
+            </div>
+          </div>
+-->
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_link_fb">Link to your Facebook page (optional)</label><span style="float: right;" id="link_fb_error"></span>
+              <input  id="id_link_fb" name="link_fb" type="text" placeholder="" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_link_tw">Link to your Twitter (optional)</label><span style="float: right;" id="link_tw_error"></span>
+              <input  id="id_link_tw" name="link_tw" type="text" placeholder="" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_link_inst">Link to your Instagram (optional)</label><span style="float: right;" id="link_inst_error"></span>
+              <input  id="id_link_inst" name="link_inst" type="text" placeholder="" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary btn-green btn-lg">Create Doula Fundraiser</button>
+            </div>
+          </div>
+
+            </fieldset>
+        </form>
+
 
 {%else%}
 
-    <p class="lead">You must be <a href="{% url 'userena_signin' %}">logged in</a> to create a project.</p>
+    <p>You must be <a href="{% url 'userena_signin' %}">Sign in</a> to create a Doula.</p>
 
 {%endif%}
 
-</div>
+      </div>
+    </div>
+</section>
+
 {% endblock %}

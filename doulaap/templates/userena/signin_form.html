@@ -1,0 +1,90 @@
+{% extends 'userena/base_userena.html' %}
+{% load i18n %}
+{% load url from future %}
+
+{% block title %}{% trans "Signin" %}{% endblock %}
+
+{% block content %}
+
+{% if messages %}
+    <div class="alert alert-info">
+        {% for message in messages %}
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+        {{ message }}
+        {% endfor %}
+    </div>
+{% endif %}
+
+<section id="form-section" style="padding: 20px 0px;">
+    <div class="form-wrap">
+      <h1 class="h1">Log In</h1>
+      <div class="box">
+        <form role="form"action="" method="post">
+            {% csrf_token %}
+            <fieldset>
+              <div class="form-group clearfix">
+                <div class="col-md-12">
+                  <label for="id_identification">Email</label>
+                  <input name="identification" type="text" class="form-control" id="id_identification" placeholder="Email">
+                </div>
+              </div>
+
+              <div class="form-group clearfix">
+                <div class="col-md-12">
+                  <label for="id_password">Password</label>
+                  <input type="password" class="form-control" id="id_password" name="password" placeholder="Password">
+                </div>
+              </div>
+<!--
+              <div class="form-group clearfix">
+                <div class="col-md-12">
+                  <label class="label" for="id_remember_me">
+                    <input id="id_remember_me" name="remember_me" type="checkbox"> Remember me for a month.
+                  </label>
+                </div>
+              </div>
+-->
+              <div class="form-group clearfix">
+                <div class="col-md-4">
+                  <button type="submit" class="btn btn-primary btn-green btn-lg">Sign In</button>
+                </div>
+                <div class="col-md-8">
+                  <p class="forgot"><a href="{% url 'userena_password_reset' %}">Forgot password?</a></p>
+                </div>
+              </div>
+            </fieldset>
+        </form>
+      </div>
+      <!-- /box -->
+    </div>
+</section>
+
+
+<!--
+<form action="" method="post">
+  {% csrf_token %}
+  <fieldset>
+    <legend>{% trans "Signin" %}</legend>
+    {{ form.non_field_errors }}
+    {% for field in form %}
+    {{ field.errors }}
+    {% comment %} Displaying checkboxes differently {% endcomment %}
+    {% if field.name == 'remember_me' %}
+    <p class="checkbox">
+    <label for="id_{{ field.name }}">{{ field }} {{ field.label }}</label>
+    </p>
+    {% else %}
+    <p>
+    {{ field.label_tag }}
+    {{ field }}
+    </p>
+    {% endif %}
+    {% endfor %}
+  </fieldset>
+  <input type="submit" value="{% trans "Signin" %}" />
+  <p class="forgot-password"><a href="{% url 'userena_password_reset' %}" title="{% trans 'Forgot your password?' %}">{% trans "Forgot your password?" %}</a></p>
+  {% if next %}<input type="hidden" name="next" value="{{ next }}" />{% endif %}
+</form>
+-->
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load humanize %}
+{% block content %}
+
+        {% if messages %}
+            <div class="alert alert-info">
+                {% for message in messages %}
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+<main id="main" role="main">
+  <div id="doula-profile">
+    <div class="container">
+
+        {%if doulaprofile%}
+            {%for item in doulaprofile%}
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="box">
+                    <div class="form-group">
+                        {% if item.userid = user.id %}
+                        <a href="{{BASE_URL}}/doula/profile/edit" class="btn btn-primary btn-green pull-right">Edit Profile</a>
+                        {% endif %}
+                      <h1 class="h1">Doulas Profile</h1>
+                    </div>
+                    <div class="form-group">
+                      <img src="/media/{{item.bio_pic}}" alt="Image" class="img-responsive">
+                    </div>
+                    <div class="form-group">
+                      <label class="label">About Me</label>
+                      <p>{{item.about_me}}</p>
+                    </div>
+                    <div class="form-group">
+                      <label class="label">Why they are a doula</label>
+                      <p>{{item.why_they_doula}}</p>
+                    </div>
+                    <div class="form-group">
+                      <label class="label">Education / Qualification</label>
+                      <p>{{item.education}}</p>
+                    </div>
+                    <div class="form-group">
+                      <label class="label">Testimonials</label>
+                      <blockquote>
+                        <p>{{item.testimonials}}</p>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+        {% else %}
+            <p>You want to <a href="{{BASE_URL}}/doula/profile/create">create</a> doula profiles?</p>
+        {% endif %}
+    </div>
+
+  </div>
+
+</main>
+
+{% endblock %}

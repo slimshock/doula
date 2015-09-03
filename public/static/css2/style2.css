@@ -1,0 +1,917 @@
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #6e6e6e;
+}
+
+::-moz-selection {
+  background: #34aadc;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #34aadc;
+  color: #fff;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+a, a:link {
+  color: #34aadc;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+a:active, a:focus, a:link:active, a:link:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#header {
+  padding: 2em 0 3em 0;
+  background: #282828 url(../images/bg_hero.jpg) no-repeat center center;
+  background-size: cover;
+}
+#header #logo {
+  float: left;
+}
+#header #logo a {
+  text-indent: -999999px;
+  display: block;
+  background: url(../images/logo.png) no-repeat;
+  width: 91px;
+  height: 29px;
+}
+#header .mainnav {
+  float: left;
+  margin: 25px 0 0 20px;
+  padding: 0;
+}
+#header .mainnav li {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#header .mainnav li a {
+  font-size: 15px;
+  color: #fff;
+  margin: 0 15px;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#header .mainnav li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+#header .mainnav li a:active, #header .mainnav li a:focus {
+  outline: none;
+  text-decoration: none;
+}
+#header .nav-actions {
+  float: right;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+#header .nav-actions li {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#header .nav-actions li a {
+  font-size: 15px;
+  color: #fff;
+  padding: 7px 20px;
+}
+#header .nav-actions li a:hover {
+  text-decoration: none;
+}
+#header .nav-actions li a:active, #header .nav-actions li a:focus {
+  outline: none;
+  text-decoration: none;
+}
+#header .nav-actions li.sign-in a {
+  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#header .nav-actions li.sign-in a:hover {
+  border: 1px solid white;
+}
+#header .nav-actions li.sign-up {
+  margin-left: 10px;
+}
+#header .nav-actions li.sign-up a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border: 1px solid #34aadc;
+  background: #34aadc;
+  border-radius: 4px;
+}
+#header .nav-actions li.sign-up a:hover {
+  border: 1px solid #fff;
+  color: #34aadc;
+  background: #fff;
+}
+#header .intro {
+  padding: 120px 0 220px 0;
+  clear: both;
+  text-align: center;
+}
+#header .intro h2 {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.4;
+}
+#header .intro .intro-btn {
+  margin-top: 20px;
+  color: #fff;
+}
+#header .intro .intro-btn:hover {
+  color: #34aadc !important;
+}
+#header .intro .intro-btn:active, #header .intro .intro-btn:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  border: 1px solid #34aadc;
+  background: #34aadc;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: white !important;
+}
+.btn-primary:hover {
+  border: 1px solid white;
+  border: 1px solid #fff;
+  background: #fff;
+  color: #34aadc !important;
+  box-shadow: none;
+}
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: none;
+  border: 1px solid #fff;
+  outline: none;
+  text-decoration: none;
+  background: #fff;
+  color: #34aadc !important;
+  box-shadow: none;
+}
+
+.btn-green:hover {
+  background: #8dc43f;
+  border: 1px solid #8dc43f;
+  color: white !important;
+}
+.btn-green:active, .btn-green:focus {
+  background: #8dc43f;
+  border: 1px solid #8dc43f;
+  color: white !important;
+  outline: none !important;
+}
+
+.ghost-btn-white {
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #888888 !important;
+}
+.ghost-btn-white:hover {
+  border: 1px solid #34aadc;
+  text-decoration: none;
+  color: white !important;
+  background: #34aadc;
+}
+.ghost-btn-white:focus, .ghost-btn-white:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.ghost-btn-share {
+  padding: 12px 25px;
+  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  color: white !important;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  letter-spacing: 1px;
+}
+.ghost-btn-share:hover {
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #34aadc !important;
+  background: #fff;
+}
+.ghost-btn-share:focus, .ghost-btn-share:active {
+  border: 1px solid #fff;
+  text-decoration: none;
+  color: #34aadc !important;
+  background: #fff;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#trending {
+  padding: 50px 0;
+  background: #f7f4ef;
+}
+#trending .trending-btn {
+  margin-top: 15px;
+  float: right;
+}
+
+.heading {
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.fundraiser-entry {
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.fundraiser-entry .fundraiser-intro-wrap {
+  padding: 10px;
+}
+.fundraiser-entry h3 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.fundraiser-entry h3 a {
+  color: #000;
+}
+.fundraiser-entry .progress {
+  height: 8px;
+  box-shadow: none;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  background: #ececec;
+}
+.fundraiser-entry .progress .progress-bar {
+  box-shadow: none;
+  background: #8dc43f;
+  border-radius: 30px;
+}
+.fundraiser-entry .money-raised {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.progress {
+  height: 8px;
+  box-shadow: none;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  background: #ececec;
+}
+.progress .progress-bar {
+  box-shadow: none;
+  background: #8dc43f;
+  border-radius: 30px;
+}
+
+.money-raised {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+#features {
+  padding: 50px 0;
+}
+#features .feature {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#features .feature h2 {
+  font-weight: 300;
+  color: #34aadc;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+#features .feature p {
+  width: 50%;
+  margin: 0 auto 30px auto;
+  text-align: center;
+}
+
+#spread-the-word {
+  background: #34aadc;
+  padding: 50px 0 70px 0;
+  float: left;
+  width: 100%;
+}
+#spread-the-word h2 {
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#spread-the-word .btn {
+  margin: 0 10px;
+}
+
+#footer {
+  background: #f7f4ef;
+  padding: 50px 0;
+  float: left;
+  width: 100%;
+}
+#footer a {
+  color: #a3a09b;
+}
+#footer ul {
+  padding: 0;
+  margin: 0;
+}
+#footer ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#footer ul li a {
+  color: #a3a09b;
+}
+#footer ul li a:hover {
+  color: #a3a09b;
+}
+#footer h4 {
+  color: #c0bebb;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+#owl-demo .item {
+  margin: 10px;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+#fundraiser-single {
+  padding: 70px 0 0 0;
+  background: #f7f4ef;
+}
+#fundraiser-single .h1 {
+  color: black;
+}
+#fundraiser-single .h1, #fundraiser-single .organizer {
+  margin-top: 0;
+}
+#fundraiser-single .goal {
+  line-height: 1;
+  margin-bottom: 20px;
+}
+#fundraiser-single .organizer {
+  margin-bottom: 20px;
+}
+#fundraiser-single .fundraiser-single-moreinfo {
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  color: black !important;
+  background: #fff;
+  padding: 20px;
+}
+#fundraiser-single .fundraiser-single-moreinfo h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+}
+#fundraiser-single .fundraiser-single-moreinfo h2 span {
+  font-weight: 300;
+  font-size: 20px;
+  color: #888;
+}
+#fundraiser-single .fundraiser-single-moreinfo .fundraiser-percent-daysleft {
+  margin-bottom: 10px;
+}
+#fundraiser-single .fundraiser-single-moreinfo .doula-organizer {
+  line-height: 2;
+}
+#fundraiser-single .fundraiser-single-moreinfo .doula-organizer span {
+  display: block;
+}
+#fundraiser-single .fundraiser-single-moreinfo .raised-goal {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+}
+#fundraiser-single .fundraiser-single-moreinfo .brief-description {
+  margin-bottom: 20px;
+}
+#fundraiser-single .fundraiser-single-moreinfo .donate-now {
+  margin-bottom: 23px;
+}
+#fundraiser-single .fundraiser-single-moreinfo .donate-now a {
+  width: 100% !important;
+  text-align: center !important;
+  font-weight: 300 !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#fundraiser-single .fundraiser-single-moreinfo .donate-now a:hover {
+  background: #8dc43f;
+  border: 1px solid #8dc43f;
+  color: white !important;
+}
+#fundraiser-single .fundraiser-single-moreinfo .donate-now a:active, #fundraiser-single .fundraiser-single-moreinfo .donate-now a:focus {
+  background: #8dc43f;
+  border: 1px solid #8dc43f;
+  color: #fff;
+  outline: none;
+}
+#fundraiser-single .fundraiser-single-moreinfo .share .h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+}
+#fundraiser-single .fundraiser-single-moreinfo .share a {
+  text-align: center;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: table;
+  float: left;
+  margin-right: 10px;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+#fundraiser-single .fundraiser-single-moreinfo .share a i {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+}
+#fundraiser-single .fundraiser-single-moreinfo .share a:hover {
+  text-decoration: none;
+  background: #34aadc;
+  border: 1px solid #34aadc;
+}
+#fundraiser-single .fundraiser-single-moreinfo .share a:hover i {
+  color: #fff;
+}
+#fundraiser-single .fundraiser-single-moreinfo .share a:active, #fundraiser-single .fundraiser-single-moreinfo .share a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+#doula-tabs {
+  background: #fff;
+  margin-top: 140px;
+}
+#doula-tabs .tab-nav {
+  margin: -44px 0 0 0;
+  padding: 0;
+}
+#doula-tabs .tab-nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#doula-tabs .tab-nav li a {
+  float: left;
+  font-size: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  margin-right: 10px;
+  background: #34aadc;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  color: #fff;
+  position: relative;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+@media screen and (max-width: 667px) {
+  #doula-tabs .tab-nav li a .tab-menu-label {
+    display: none;
+  }
+}
+#doula-tabs .tab-nav li a .count {
+  position: absolute;
+  top: 0;
+  margin-top: -14px;
+  right: 7px;
+  background: #8dc43f;
+  padding: 1px 7px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 11px;
+  border: 3px solid #f7f4ef;
+  color: #fff;
+}
+#doula-tabs .tab-nav li a:hover {
+  margin-top: -8px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  background: #fff;
+  color: #737373;
+}
+#doula-tabs .tab-nav li a:active, #doula-tabs .tab-nav li a:focus {
+  outline: none;
+  text-decoration: none;
+}
+#doula-tabs .tab-nav li.active a {
+  background: #fff;
+  color: #737373;
+  margin-top: -8px;
+  padding-bottom: 20px;
+}
+#doula-tabs #tabs-content {
+  padding: 50px 0;
+}
+#doula-tabs #tabs-content p {
+  margin-bottom: 20px;
+  line-height: 1.9;
+}
+#doula-tabs #tabs-content .tab-content {
+  display: none;
+}
+#doula-tabs #tabs-content .tab-content.active {
+  display: block;
+}
+#doula-tabs #tabs-content .tab-content h2 {
+  color: #000;
+  font-weight: 300;
+}
+
+#donate {
+  background: #f7f4ef;
+  padding: 50px 0;
+}
+#donate .h1, #donate .h2 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+#donate .h2 {
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 20px;
+}
+#donate .doula-donate-info {
+  margin-bottom: 30px;
+}
+#donate .amt-label {
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+}
+#donate #amt {
+  text-align: right;
+}
+#donate .input-amt {
+  width: 200px;
+}
+#donate .input-amt .input-group-addon {
+  font-size: 20px;
+}
+#donate .form-group {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#donate .total {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+  position: relative;
+}
+#donate .total-amount {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 20px;
+  display: block;
+}
+#donate .paginate {
+  clear: both;
+}
+
+.form-control {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: none;
+}
+.form-control:hover, .form-control:active, .form-control:focus {
+  box-shadow: none;
+}
+.form-control:active, .form-control:focus {
+  border: 1px solid #34aadc;
+}
+
+.post-wrap {
+  margin: 0 0 0px 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+.post-wrap .post-entry {
+  list-style: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+  border-bottom: 1px solid #f7f4ef;
+  float: left;
+  width: 100%;
+  display: block;
+}
+.post-wrap .post-entry .post-doante-date {
+  float: right;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #696969;
+  color: #ccc;
+  margin-top: 0px;
+}
+.post-wrap .post-entry .post-username {
+  margin-top: 0;
+  font-size: 20px;
+  color: #5a5a5a;
+  font-weight: 700;
+}
+.post-wrap .post-entry .post-donate {
+  clear: both;
+  display: block;
+  float: left;
+}
+.post-wrap .post-entry .post-donate .post-donate-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ccc;
+  display: block;
+  margin-bottom: 10px;
+}
+.post-wrap .post-entry .post-donate .post-donate-amount {
+  display: block;
+  font-size: 20px;
+  color: #8dc43f;
+  background: url(../images/banknote.png) no-repeat left 50%;
+  padding-left: 33px;
+}
+.post-wrap .post-entry .post-donate .post-message {
+  margin-top: 20px;
+}
+
+.pagination {
+  width: 100%;
+}
+
+.love {
+  color: #f9bcb5;
+}
+
+#form-section {
+  background: #f7f4ef;
+  padding: 100px 0;
+}
+#form-section .box {
+  padding: 20px;
+  background: #fff;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+}
+#form-section .label {
+  font-weight: 500;
+  color: #6e6e6e;
+  font-size: 14px;
+}
+#form-section #remember {
+  margin-top: 4px;
+  float: left;
+}
+#form-section .form-wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#form-section .form-group {
+  margin-bottom: 20px;
+  clear: both;
+  width: 100%;
+}
+#form-section .forgot {
+  margin-top: 10px;
+}
+
+#admin-section-wrap {
+  background: #f7f4ef;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#admin-section-wrap #doula-tabs {
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+#admin-section-wrap #doula-tabs .tab-nav {
+  position: relative;
+  margin: -44px 0 0 40px;
+}
+@media screen and (max-width: 768px) {
+  #admin-section-wrap #doula-tabs .tab-nav {
+    margin-left: 20px;
+  }
+}
+#admin-section-wrap #doula-tabs .tab-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#admin-section-wrap #doula-tabs .tab-content .field {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#admin-section-wrap #doula-tabs .tab-content .field .label {
+  color: #888888 !important;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+#admin-section-wrap #doula-tabs .tab-content .field p {
+  color: #000;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+#admin-section-wrap #doula-tabs .tab-content form .label {
+  color: #888888 !important;
+  margin-bottom: 10px !important;
+  border-radius: 0;
+  display: block;
+}
+
+.navbar-toggle {
+  z-index: 9999;
+}
+.navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+.mobile-menu {
+  background: #282828;
+  padding: 20px;
+  display: none;
+}
+.mobile-menu ul {
+  padding: 0;
+  margin: 0;
+}
+.mobile-menu ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mobile-menu ul li a {
+  display: block;
+  color: #ccc;
+  padding: 7px 10px;
+}
+.mobile-menu ul li a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+.mobile-menu ul li.sign-up a {
+  background: #34aadc;
+  color: #fff;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+}
+
+input, textarea {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: none;
+  width: 325px;
+}
+input:hover, input:active, input:focus, textarea:hover, textarea:active, textarea:focus {
+  box-shadow: none;
+}
+input:active, input:focus, textarea:active, textarea:focus {
+  border: 1px solid #34aadc;
+}
+
+
+.navprofile {
+  float: left;
+  margin: 25px 0 0 20px;
+  padding: 0;
+}
+.navprofile li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color:#34AADC;
+}
+.navprofile li a {
+  font-size: 15px;
+  color: #fff;
+  margin: 0 15px;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color:#34AADC;
+}
+.navprofile li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  color:#34AADC;
+}
+.navprofile li a:active, .navprofile li a:focus {
+  outline: none;
+  text-decoration: none;
+  color:#34AADC;
+}

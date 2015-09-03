@@ -85,7 +85,7 @@ LOGIN_REDIRECT_URL = '/accounts/%(username)s/'
 LOGIN_URL = '/accounts/signin/'
 LOGOUT_URL = '/accounts/signout/'
 AUTH_PROFILE_MODULE = 'profiles.Profile'
-USERENA_DISABLE_PROFILE_LIST = True
+USERENA_DISABLE_PROFILE_LIST = False
 USERENA_MUGSHOT_SIZE = 140
 
 ROOT_URLCONF = 'doulaap.urls'
@@ -104,12 +104,16 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'django.contrib.admindocs',
+    'django.contrib.humanize',
     'guardian',
     'south',
     'userena',
     'userena.contrib.umessages',
     'profiles',
-    'project'
+    'project',
+    'doulaprofile',
+    'donation',
+    'easy_thumbnails',
 )
 
 LOGGING = {
@@ -142,8 +146,12 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'junrydelossantos@gmail.com'  
 EMAIL_HOST_PASSWORD = 'strategy001' 
 
+
 # Needed for Django guardian
 ANONYMOUS_USER_ID = -1
 
 # Test runner
 TEST_RUNNER = 'django_coverage.coverage_runner.CoverageRunner'
+
+#stripe
+STRIPE_API_KEY = ' sk_test_1QX4Nzx7fRrtweqk4eBmVaqL'

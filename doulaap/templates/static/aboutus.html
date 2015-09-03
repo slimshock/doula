@@ -1,0 +1,241 @@
+{% load i18n static %}
+{% load url from future %}
+{% load humanize %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Doula</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css">  -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="{% static 'js/vendor/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+</head>
+<body>
+
+<header id="header" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 id="logo"><a href="{% url 'promo' %}">MoolaForTheDoula</a></h1>
+        <ul class="mainnav">
+          <li><a href="{% url 'promo' %}">Home</a></li>
+          <li><a href="{{BASE_URL}}/doula">Browse Projects</a></li>
+          <li><a href="{{BASE_URL}}/doula/profile">Find a Doula</a></li>
+          <li><a href="{% url 'create_project' %}">Create a Project</a></li>
+          <!--li><a href="{% url 'howitworks' %}">How It Works</a></li-->
+            {#% if user.is_authenticated %#}
+            {#% endif %#}
+          <!--<li><a href="#"><i class="glyphicomoon glyphicomoon-search"></i></a></li>-->
+        </ul>
+        <ul class="nav-actions">
+            {% if user.is_authenticated %}
+                <li class="sign-in"><a href="{% url 'userena_profile_detail' user.username %}">{% trans 'Account' %} ({{ user.first_name }})</a></li>
+                <li class="sign-up"><a href="{% url 'userena_signout' %}">Sign out</a></li>
+            {% else %}
+                <li class="sign-in"><a href="{% url 'userena_signin' %}">Sign in</a></li>
+                <li class="sign-up"><a href="{% url 'userena_signup' %}">Sign up</a></li>
+            {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<main id="main" role="main">
+
+{% if messages %}
+    <div class="alert alert-info">
+        {% for message in messages %}
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+        {{ message }}
+        {% endfor %}
+    </div>
+{% endif %}
+
+<section id="trending">
+    <div class="container">
+      <div class="row heading">
+        <div class="col-md-12">
+          <h3 class="pull-left">About Us</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <p>
+Moolah for the Doula is an online fund-raising platform to help families and friends raise money for Doula services. The goal of Moolah for the Doula is to raise the rate of births attended by Doula's from three percent to five percent in five years. Moolah for the Doula is founded by Hannah Harpole, a Doula based in Brooklyn, New York.</br>
+</p>
+
+<p>
+Doula is a greek word which translates to “a woman who serves.” Doula's are professionals trained in childbirth and provide continuous support before, during, just after birth and postpartum. They are part of the birth the entire time or provide continuous support for a birthing mother. This is a role that traditionally a mother, sister, friend or all would provide a laboring mother support. As people have became increasingly mobile, families and friends often do not live in the same cities, the role of the Doula has increased in importance.</br>
+
+<br/>
+In Birth' s attended by Doulas: <br/>
+<ul>
+<li>
+    31% decrease in the use of Pitocin*
+</li>
+<li>
+    28% decrease in the risk of C-section*
+</li>
+<li>
+    12% increase in the likelihood of a spontaneous vaginal birth*
+</li>
+<li>
+    9% decrease in the use of any medications for pain relief
+</li>
+<li>
+    14% decrease in the risk of newborns being admitted to a special care nursery
+</li>
+<li>
+    34% decrease in the risk of being dissatisfied with the birth experience*
+</li>
+</ul>
+</br>
+For four of these outcomes (marked with *),  results with a doula were better than all the other types of continuous support that were studied. For the other outcomes, there was no difference between types of continuous support.
+</br>
+
+There are several activities performed by a Doula. They:
+<ul>
+<li>
+    Work with a family to create a birthplan
+</li>
+<li>
+    Helps a mother become informed about various birth choices
+</li>
+<li>
+    Provides emotional support
+</li>
+<li>
+    Uses comfort measures: breathing, relaxation, movement, positioning, massage
+</li>
+<li>
+    Gives information
+</li>
+<li>
+    Continuously reassures and comforts the mother (the key word is continuous—a doula never leaves the mother’s side)
+</li>
+<li>
+    Advocates for the mother and helps facilitate communication between the mother and care provider
+</li>
+<li>
+    Looks after your partner as well (gives them bathroom breaks!), but their primary responsibility is to the mother
+</li>
+</ul>
+
+What do Doulas do NOT do. Some of these include:
+<ul>
+<li>
+    Doulas are NOT medical professionals
+</li>
+<li>
+    They do not perform clinical tasks such as vaginal exams or fetal heart monitoring
+</li>
+<li>
+    They do not give medical advice or diagnose conditions
+</li>
+<li>
+    They do not judge you for decisions that you make
+</li>
+<li>
+    They do not let their personal values or biases get in the way of caring for you (for example, they should not pressure you into making any decisions just because that’s what they prefer)
+</li>
+<li>
+    They do not take over the role of your husband or partner
+</li>
+<li>
+    They do not deliver the baby
+</li>
+<li>
+    They do not change shifts
+</li>
+</ul>
+</br>
+Please see DONA International website to learn more about the role of a Doula http://www.dona.org/.
+
+</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="spread-the-word">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="share text-center">
+            <h2>Spread The Word</h2>
+            <a href="#" class="btn ghost-btn-share">Share On Twitter</a>
+            <a href="#" class="btn ghost-btn-share">Share On Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- /main -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h4>Doula</h4>
+        <p>&copy; Copyright 2014 Doula. <br>All Rights Reserverd.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Getting Started</h4>
+        <ul>
+          {% if not user.is_authenticated %}
+            <li><a href="{% url 'userena_signup' %}">Create a Doula Project</a></li>
+            <li><a href="{% url 'userena_signin' %}">Log in to Your Account</a></li>
+        {% endif %}
+          <li><a href="{% url 'howitworks' %}">How it Works</a></li>
+          <li><a href="#">Fundraising Tips</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>General</h4>
+        <ul>
+          <li><a href="{% url 'aboutus' %}">About Us</a></li>
+          <li><a href="{% url 'testimonial' %}">Testimonial</a></li>
+          <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+          <li><a href="{% url 'terms' %}">Terms of Service</a></li>
+        </ul>
+      </div>
+      <!--
+      <div class="col-md-3">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+      -->
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<script src="{% static 'js/vendor/jquery-1.11.0.min.js' %}"></script>
+<script src="{% static 'js/vendor/jquery-migrate-1.2.1.min.js' %}"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/vendor/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+</html>

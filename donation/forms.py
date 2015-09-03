@@ -76,8 +76,10 @@ class DonationPaymentForm(forms.Form):
     expiration = CCExpField(required=True, label="Expiration")
     cvc = forms.IntegerField(required=True, label="CCV Number",
         max_value=9999, widget=forms.TextInput(attrs={'size': '4'}))
-    amount = forms.IntegerField(required=True, label="Amount", min_value=500)
-    comment = forms.CharField(max_length=200, label="Comments", required=True)
+    amount = forms.IntegerField(required=True, label="Amount", min_value=1)
+    comment = forms.CharField(max_length=4000, label="Comments", required=False)
+    username = forms.CharField(max_length=4000, label="Name", required=False)
+    email = forms.CharField(max_length=4000, label="Email", required=False)
 
     def clean(self):
         """
@@ -93,11 +95,14 @@ class DonationPaymentForm(forms.Form):
             exp_year = self.cleaned_data["expiration"].year
             cvc = self.cleaned_data["cvc"]
             amount = self.cleaned_data["amount"]
-            amount *= 100
+            #amount *= 100
+            amount_wfee = (float(amount) * float(0.05))
+            amount_wfee = (amount_wfee + 2) + amount
+            amount_wfee *= 100
             donation = Donation()
             
             # let's charge
-            success, instance = donation.charge(amount, number, exp_month,
+            success, instance = donation.charge(int(amount_wfee), number, exp_month,
                                                 exp_year, cvc)
             
             if not success:

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load humanize %}
+{% block content %}
+
+        {% if messages %}
+            <div class="alert alert-info">
+                {% for message in messages %}
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+<section id="trending">
+    <div class="container">
+      <div class="row">
+
+          <p>You can find a doula near you using the search service provided by <a target="_blank" href="http://apps.dona.org/Directory/Search">DONA International.</a></p>
+
+
+      </div>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,4 +1,5 @@
 DEBUG = True
+ALLOWED_HOSTS = ['*']
 TEMPLATE_DEBUG = DEBUG
 
 import os
@@ -45,11 +46,19 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'doulaap/static/'),
 )
 
+GRAPPELLI_ADMIN_TITLE = 'Doula Project'
+
 # List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
+    'django.contrib.messages.context_processors.messages',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -85,8 +94,9 @@ LOGIN_REDIRECT_URL = '/accounts/%(username)s/'
 LOGIN_URL = '/accounts/signin/'
 LOGOUT_URL = '/accounts/signout/'
 AUTH_PROFILE_MODULE = 'profiles.Profile'
-USERENA_DISABLE_PROFILE_LIST = True
+USERENA_DISABLE_PROFILE_LIST = False
 USERENA_MUGSHOT_SIZE = 140
+USERENA_WITHOUT_USERNAMES = True
 
 ROOT_URLCONF = 'doulaap.urls'
 WSGI_APPLICATION = 'doulaap.wsgi.application'
@@ -102,6 +112,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'grappelli',
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.humanize',
@@ -111,7 +122,9 @@ INSTALLED_APPS = (
     'userena.contrib.umessages',
     'profiles',
     'project',
+    'doulaprofile',
     'donation',
+    'easy_thumbnails',
 )
 
 LOGGING = {
@@ -138,11 +151,18 @@ LOGGING = {
     }
 }
 
-EMAIL_USE_TLS = True  
-EMAIL_HOST = 'smtp.gmail.com'  
-EMAIL_PORT = 587  
-EMAIL_HOST_USER = 'junrydelossantos@gmail.com'  
-EMAIL_HOST_PASSWORD = 'strategy001' 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'moolahforthedoula@gmail.com'
+EMAIL_HOST_PASSWORD = 'doula&light01'
+
+
+#EMAIL_USE_TLS = True
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER = 'doula@trialx.com'
+#EMAIL_HOST_PASSWORD = 'doula1234'
 
 # Needed for Django guardian
 ANONYMOUS_USER_ID = -1
@@ -151,4 +171,5 @@ ANONYMOUS_USER_ID = -1
 TEST_RUNNER = 'django_coverage.coverage_runner.CoverageRunner'
 
 #stripe
-STRIPE_API_KEY = ' sk_test_1QX4Nzx7fRrtweqk4eBmVaqL'
+#STRIPE_API_KEY = 'sk_test_1QX4Nzx7fRrtweqk4eBmVaqL'
+STRIPE_API_KEY = 'sk_live_pmpfdCBELo016zn4LTQj9Hdw'

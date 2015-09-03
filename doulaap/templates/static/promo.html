@@ -1,31 +1,236 @@
-{% extends "base.html" %}
+{% load i18n static %}
 {% load url from future %}
-{% block content %}
-<div id="intro">
-  <h2 class="intro"><span>Doula</span><br/>Help.. Share..</h2>
+{% load humanize %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>MoolahForTheDoula</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/ico" href="{% static 'favicon.ico' %}"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css">  -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
 
-  <p class="intro">Doulas provide important pregnancy related advice and assistance to the couple during labor. However, Doula services are usually out-of-pocket expense to the would be parents and can range from $500-$1500 or more. Such services are not usually covered by health insurance companies and so many people dont use Doulas. Even though it is known that Doulas help couples have more stress free labor and also help them make treatment choices before and during the labor. </p>
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
 
-  <p id="xtra-info">“Each baby has only one opportunity to be born” ~ <a href="http://bloomingmiracledoula.com/affirmations-quotes/">Nancy Wainer</a></p>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="{% static 'js/vendor/modernizr-2.6.2-respond-1.1.0.min.js' %}"></script>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+<!--
+function popfbshare(url) {
+    var left = (screen.width/2)-(340/2);
+    var top = (screen.height/2)-(270/2);
+	newwindow=window.open(url,'name','height=270,width=340, top='+top+', left='+left);
+	if (window.focus) {newwindow.focus()}
+	return false;
 
-</div><!-- /intro-->
+}
 
-<ul class="features">
-  <li><h3>What is Doula?</h3>
+// -->
+</script>
 
-  <p> A doula is a nonmedical person who assists a woman before, during, or after childbirth, as well as her husband and/or family, by providing physical assistance, and emotional support. The provision of continuous support during labour, which may be provided by doulas, nurses, family, friends, etc. is associated with improved maternal and fetal health and a variety of other benefits.</p>
-    <a href="http://en.wikipedia.org/wiki/Doula">http://en.wikipedia.org/wiki/Doula</a>
-  </li>
-  <li><h3>Birth</h3>
+<script language="javascript" type="text/javascript">
+<!--
+function poptwshare(url) {
+    var left = (screen.width/2)-(500/2);
+    var top = (screen.height/2)-(500/2);
+	newwindow=window.open(url,'name','height=500,width=500, top='+top+', left='+left);
+	if (window.focus) {newwindow.focus()}
+	return false;
 
-  <p> A birth doula is also called a labor doula. The kinds of support provided during childbirth may include physical assistance and comfort (massage, maintaining a supporting posture or providing water), emotional support (providing company, encouragement or simply talking in a soothing tone of voice), and acting as an advocate for the woman undergoing childbirth (suggesting options or supporting the woman's decisions to a medical team).</p>
+}
 
-  <li>
-  <h3>Family Life</h3>
+// -->
+</script>
 
-  <p> A family life doula provides help and support to an entire family. Occasionally confused with nannies, family life doulas are ongoing, long-term sources of support within a family structure. They fulfill tasks similar to those of postpartum doulas. Additionally, they care for children while providing emotional support, encouragement, companionship, and, if requested, guidance to new mothers. A family life doula can play a key role in lowering a family's stress so parents are able to focus on thriving in their careers while growing together as a parenting team at home.</p>
+<header id="header" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 id="logo"><a href="{% url 'promo' %}">MoolaForTheDoula</a></h1>
+        <ul class="mainnav">
+          <li><a href="{% url 'promo' %}">Home</a></li>
+          <li><a href="{{BASE_URL}}/doula">Browse Projects</a></li>
+          <li><a href="{{BASE_URL}}/doula/profile">Find a Doula</a></li>
+          <li><a href="{% url 'create_project' %}">Create a Project</a></li>
+          <!--li><a href="{% url 'howitworks' %}">How It Works</a></li-->
+            {#% if user.is_authenticated %#}
+            {#% endif %#}
+          <!--<li><a href="#"><i class="glyphicomoon glyphicomoon-search"></i></a></li>-->
+        </ul>
+        <ul class="nav-actions">
+            {% if user.is_authenticated %}
+                <li class="sign-in"><a href="{% url 'userena_profile_detail' user.username %}">{% trans 'Account' %} ({{ user.first_name }})</a></li>
+                <li class="sign-up"><a href="{% url 'userena_signout' %}">Sign out</a></li>
+            {% else %}
+                <li class="sign-in"><a href="{% url 'userena_signin' %}">Sign in</a></li>
+                <li class="sign-up"><a href="{% url 'userena_signup' %}">Sign up</a></li>
+            {% endif %}
+        </ul>
+        <div class="col-md-8 col-md-offset-2 intro">
+          <h2>A Fundraising Platform to Help Families Raise Money For Doula Services</h2>
+          <p><a href="{{BASE_URL}}/doula" class="btn btn-primary btn-lg intro-btn">Get started</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<main id="main" role="main">
 
-  </li>
-</ul>
+{% if messages %}
+    <div class="alert alert-info">
+        {% for message in messages %}
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+        {{ message }}
+        {% endfor %}
+    </div>
+{% endif %}
+<!--
+<section id="trending">
+    <div class="container">
+      <div class="row heading">
+        <div class="col-md-12">
+          <a href="{{BASE_URL}}/doula" class="ghost-btn-white trending-btn">View all</a>
+          <h3 class="pull-left">Trending Now</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="owl-demo">
 
-{% endblock %}
+                {%if project%}
+                    {%for item in project%}
+                        {% if item.is_review %}
+                            <div class="item">
+
+                              <div class="fundraiser-entry clearfix">
+                                <a href="{{BASE_URL}}/doula/show/{{item.id}}" class="crop" style="background-image: url('/media/{{item.img_link}}')"></a>
+                                <div class="fundraiser-intro-wrap">
+                                  <h3><a href="{{BASE_URL}}/doula/show/{{item.id}}">{{item.title}}</a></h3>
+                                  <p>{{item.project_desc}}</p>
+                                  <div class="fundraiser-stat">
+                                    <div class="money-raised"><strong>${{ item.totalpledgeamount|floatformat:2|intcomma }}</strong> <span>USD</span></div>
+                                    <div class="fundraiser-progress progress">
+                                      <div class="progress-bar" role="progressbar" aria-valuenow="{{item.percent}}" aria-valuemin="0" aria-valuemax="100" style="width: {{item.percent}}%;">
+                                        <span class="sr-only">{{item.percent}}</span>
+                                      </div>
+                                    </div>
+                                    <div class="fundraiser-percent-daysleft clearfix">
+                                      <span class="percent pull-left">{{item.percent}}%</span>
+                                      <span class="daysleft pull-right"> {{ item.expd }} days left</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        <!-- /item -->
+    <!--
+                        {%endif%}
+                    {%endfor%}
+                {%endif%}
+
+
+          </div>
+          <!-- /owl-demo
+        </div>
+      </div>
+
+    </div>
+</section>
+-->
+<section id="spread-the-word">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="share text-center">
+            <h2>Spread The Word</h2>
+            <!--<a href='http://twitter.com/share' target="_blank" class="btn ghost-btn-share">Share On Twitter</a>-->
+            <a href='#' onclick="return poptwshare('http://twitter.com/share')" class="btn ghost-btn-share">Share On Twitter</a>
+            <a href='#' onclick="return popfbshare('http://www.facebook.com/share.php?u=http://moolahforthedoula.com')" class="btn ghost-btn-share">Share On Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- /main -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h4>Doula</h4>
+        <p>&copy; Copyright 2014 Doula. <br>All Rights Reserverd.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Getting Started</h4>
+        <ul>
+        {% if not user.is_authenticated %}
+            <li><a href="{% url 'userena_signup' %}">Create a Doula Project</a></li>
+            <li><a href="{% url 'userena_signin' %}">Log in to Your Account</a></li>
+        {% endif %}
+          <li><a href="{% url 'howitworks' %}">How it Works</a></li>
+          <li><a href="#">Fundraising Tips</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>General</h4>
+        <ul>
+          <li><a href="{% url 'aboutus' %}">About Us</a></li>
+          <li><a href="{% url 'testimonial' %}">Testimonial</a></li>
+          <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+          <li><a href="{% url 'terms' %}">Terms of Service</a></li>
+        </ul>
+      </div>
+        <!--
+      <div class="col-md-3">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+      -->
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<script src="{% static 'js/vendor/jquery-1.11.0.min.js' %}"></script>
+<script src="{% static 'js/vendor/jquery-migrate-1.2.1.min.js' %}"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/vendor/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10081171; 
+var sc_invisible=1; 
+var sc_security="da0ad0bf"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="website
+statistics" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10081171/0/da0ad0bf/1/"
+alt="website statistics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

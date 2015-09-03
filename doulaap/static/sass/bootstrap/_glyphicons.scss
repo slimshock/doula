@@ -1,0 +1,534 @@
+//
+// Glyphicons for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+
+// Import the fonts
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot'), '#{$icon-font-path}#{$icon-font-name}.eot'));
+  src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$icon-font-name}.eot?#iefix')) format('embedded-opentype'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff'), '#{$icon-font-path}#{$icon-font-name}.woff')) format('woff'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.ttf'), '#{$icon-font-path}#{$icon-font-name}.ttf')) format('truetype'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}'), '#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}')) format('svg');
+}
+
+@font-face {
+  font-family: 'Icomoon';
+  src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path2}#{$icon-font-name2}.eot'), '#{$icon-font-path2}#{$icon-font-name2}.eot'));
+  src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path2}#{$icon-font-name2}.eot?#iefix'), '#{$icon-font-path2}#{$icon-font-name2}.eot?#iefix')) format('embedded-opentype'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path2}#{$icon-font-name2}.woff'), '#{$icon-font-path2}#{$icon-font-name2}.woff')) format('woff'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path2}#{$icon-font-name2}.ttf'), '#{$icon-font-path2}#{$icon-font-name2}.ttf')) format('truetype'),
+       url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path2}#{$icon-font-name2}.svg##{$icon-font-svg-id2}'), '#{$icon-font-path2}#{$icon-font-name}.svg##{$icon-font-svg-id2}')) format('svg');
+}
+
+// Catchall baseclass
+
+.glyphicon { font-family: 'Glyphicons Halflings'; }
+.glyphicomoon { font-family: 'Icomoon'; }
+.glyphicon,
+.glyphicomoon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Individual icons
+
+.glyphicon-asterisk               { &:before { content: "\2a"; } }
+.glyphicon-plus                   { &:before { content: "\2b"; } }
+.glyphicon-euro                   { &:before { content: "\20ac"; } }
+.glyphicon-minus                  { &:before { content: "\2212"; } }
+.glyphicon-cloud                  { &:before { content: "\2601"; } }
+.glyphicon-envelope               { &:before { content: "\2709"; } }
+.glyphicon-pencil                 { &:before { content: "\270f"; } }
+.glyphicon-glass                  { &:before { content: "\e001"; } }
+.glyphicon-music                  { &:before { content: "\e002"; } }
+.glyphicon-search                 { &:before { content: "\e003"; } }
+.glyphicon-heart                  { &:before { content: "\e005"; } }
+.glyphicon-star                   { &:before { content: "\e006"; } }
+.glyphicon-star-empty             { &:before { content: "\e007"; } }
+.glyphicon-user                   { &:before { content: "\e008"; } }
+.glyphicon-film                   { &:before { content: "\e009"; } }
+.glyphicon-th-large               { &:before { content: "\e010"; } }
+.glyphicon-th                     { &:before { content: "\e011"; } }
+.glyphicon-th-list                { &:before { content: "\e012"; } }
+.glyphicon-ok                     { &:before { content: "\e013"; } }
+.glyphicon-remove                 { &:before { content: "\e014"; } }
+.glyphicon-zoom-in                { &:before { content: "\e015"; } }
+.glyphicon-zoom-out               { &:before { content: "\e016"; } }
+.glyphicon-off                    { &:before { content: "\e017"; } }
+.glyphicon-signal                 { &:before { content: "\e018"; } }
+.glyphicon-cog                    { &:before { content: "\e019"; } }
+.glyphicon-trash                  { &:before { content: "\e020"; } }
+.glyphicon-home                   { &:before { content: "\e021"; } }
+.glyphicon-file                   { &:before { content: "\e022"; } }
+.glyphicon-time                   { &:before { content: "\e023"; } }
+.glyphicon-road                   { &:before { content: "\e024"; } }
+.glyphicon-download-alt           { &:before { content: "\e025"; } }
+.glyphicon-download               { &:before { content: "\e026"; } }
+.glyphicon-upload                 { &:before { content: "\e027"; } }
+.glyphicon-inbox                  { &:before { content: "\e028"; } }
+.glyphicon-play-circle            { &:before { content: "\e029"; } }
+.glyphicon-repeat                 { &:before { content: "\e030"; } }
+.glyphicon-refresh                { &:before { content: "\e031"; } }
+.glyphicon-list-alt               { &:before { content: "\e032"; } }
+.glyphicon-lock                   { &:before { content: "\e033"; } }
+.glyphicon-flag                   { &:before { content: "\e034"; } }
+.glyphicon-headphones             { &:before { content: "\e035"; } }
+.glyphicon-volume-off             { &:before { content: "\e036"; } }
+.glyphicon-volume-down            { &:before { content: "\e037"; } }
+.glyphicon-volume-up              { &:before { content: "\e038"; } }
+.glyphicon-qrcode                 { &:before { content: "\e039"; } }
+.glyphicon-barcode                { &:before { content: "\e040"; } }
+.glyphicon-tag                    { &:before { content: "\e041"; } }
+.glyphicon-tags                   { &:before { content: "\e042"; } }
+.glyphicon-book                   { &:before { content: "\e043"; } }
+.glyphicon-bookmark               { &:before { content: "\e044"; } }
+.glyphicon-print                  { &:before { content: "\e045"; } }
+.glyphicon-camera                 { &:before { content: "\e046"; } }
+.glyphicon-font                   { &:before { content: "\e047"; } }
+.glyphicon-bold                   { &:before { content: "\e048"; } }
+.glyphicon-italic                 { &:before { content: "\e049"; } }
+.glyphicon-text-height            { &:before { content: "\e050"; } }
+.glyphicon-text-width             { &:before { content: "\e051"; } }
+.glyphicon-align-left             { &:before { content: "\e052"; } }
+.glyphicon-align-center           { &:before { content: "\e053"; } }
+.glyphicon-align-right            { &:before { content: "\e054"; } }
+.glyphicon-align-justify          { &:before { content: "\e055"; } }
+.glyphicon-list                   { &:before { content: "\e056"; } }
+.glyphicon-indent-left            { &:before { content: "\e057"; } }
+.glyphicon-indent-right           { &:before { content: "\e058"; } }
+.glyphicon-facetime-video         { &:before { content: "\e059"; } }
+.glyphicon-picture                { &:before { content: "\e060"; } }
+.glyphicon-map-marker             { &:before { content: "\e062"; } }
+.glyphicon-adjust                 { &:before { content: "\e063"; } }
+.glyphicon-tint                   { &:before { content: "\e064"; } }
+.glyphicon-edit                   { &:before { content: "\e065"; } }
+.glyphicon-share                  { &:before { content: "\e066"; } }
+.glyphicon-check                  { &:before { content: "\e067"; } }
+.glyphicon-move                   { &:before { content: "\e068"; } }
+.glyphicon-step-backward          { &:before { content: "\e069"; } }
+.glyphicon-fast-backward          { &:before { content: "\e070"; } }
+.glyphicon-backward               { &:before { content: "\e071"; } }
+.glyphicon-play                   { &:before { content: "\e072"; } }
+.glyphicon-pause                  { &:before { content: "\e073"; } }
+.glyphicon-stop                   { &:before { content: "\e074"; } }
+.glyphicon-forward                { &:before { content: "\e075"; } }
+.glyphicon-fast-forward           { &:before { content: "\e076"; } }
+.glyphicon-step-forward           { &:before { content: "\e077"; } }
+.glyphicon-eject                  { &:before { content: "\e078"; } }
+.glyphicon-chevron-left           { &:before { content: "\e079"; } }
+.glyphicon-chevron-right          { &:before { content: "\e080"; } }
+.glyphicon-plus-sign              { &:before { content: "\e081"; } }
+.glyphicon-minus-sign             { &:before { content: "\e082"; } }
+.glyphicon-remove-sign            { &:before { content: "\e083"; } }
+.glyphicon-ok-sign                { &:before { content: "\e084"; } }
+.glyphicon-question-sign          { &:before { content: "\e085"; } }
+.glyphicon-info-sign              { &:before { content: "\e086"; } }
+.glyphicon-screenshot             { &:before { content: "\e087"; } }
+.glyphicon-remove-circle          { &:before { content: "\e088"; } }
+.glyphicon-ok-circle              { &:before { content: "\e089"; } }
+.glyphicon-ban-circle             { &:before { content: "\e090"; } }
+.glyphicon-arrow-left             { &:before { content: "\e091"; } }
+.glyphicon-arrow-right            { &:before { content: "\e092"; } }
+.glyphicon-arrow-up               { &:before { content: "\e093"; } }
+.glyphicon-arrow-down             { &:before { content: "\e094"; } }
+.glyphicon-share-alt              { &:before { content: "\e095"; } }
+.glyphicon-resize-full            { &:before { content: "\e096"; } }
+.glyphicon-resize-small           { &:before { content: "\e097"; } }
+.glyphicon-exclamation-sign       { &:before { content: "\e101"; } }
+.glyphicon-gift                   { &:before { content: "\e102"; } }
+.glyphicon-leaf                   { &:before { content: "\e103"; } }
+.glyphicon-fire                   { &:before { content: "\e104"; } }
+.glyphicon-eye-open               { &:before { content: "\e105"; } }
+.glyphicon-eye-close              { &:before { content: "\e106"; } }
+.glyphicon-warning-sign           { &:before { content: "\e107"; } }
+.glyphicon-plane                  { &:before { content: "\e108"; } }
+.glyphicon-calendar               { &:before { content: "\e109"; } }
+.glyphicon-random                 { &:before { content: "\e110"; } }
+.glyphicon-comment                { &:before { content: "\e111"; } }
+.glyphicon-magnet                 { &:before { content: "\e112"; } }
+.glyphicon-chevron-up             { &:before { content: "\e113"; } }
+.glyphicon-chevron-down           { &:before { content: "\e114"; } }
+.glyphicon-retweet                { &:before { content: "\e115"; } }
+.glyphicon-shopping-cart          { &:before { content: "\e116"; } }
+.glyphicon-folder-close           { &:before { content: "\e117"; } }
+.glyphicon-folder-open            { &:before { content: "\e118"; } }
+.glyphicon-resize-vertical        { &:before { content: "\e119"; } }
+.glyphicon-resize-horizontal      { &:before { content: "\e120"; } }
+.glyphicon-hdd                    { &:before { content: "\e121"; } }
+.glyphicon-bullhorn               { &:before { content: "\e122"; } }
+.glyphicon-bell                   { &:before { content: "\e123"; } }
+.glyphicon-certificate            { &:before { content: "\e124"; } }
+.glyphicon-thumbs-up              { &:before { content: "\e125"; } }
+.glyphicon-thumbs-down            { &:before { content: "\e126"; } }
+.glyphicon-hand-right             { &:before { content: "\e127"; } }
+.glyphicon-hand-left              { &:before { content: "\e128"; } }
+.glyphicon-hand-up                { &:before { content: "\e129"; } }
+.glyphicon-hand-down              { &:before { content: "\e130"; } }
+.glyphicon-circle-arrow-right     { &:before { content: "\e131"; } }
+.glyphicon-circle-arrow-left      { &:before { content: "\e132"; } }
+.glyphicon-circle-arrow-up        { &:before { content: "\e133"; } }
+.glyphicon-circle-arrow-down      { &:before { content: "\e134"; } }
+.glyphicon-globe                  { &:before { content: "\e135"; } }
+.glyphicon-wrench                 { &:before { content: "\e136"; } }
+.glyphicon-tasks                  { &:before { content: "\e137"; } }
+.glyphicon-filter                 { &:before { content: "\e138"; } }
+.glyphicon-briefcase              { &:before { content: "\e139"; } }
+.glyphicon-fullscreen             { &:before { content: "\e140"; } }
+.glyphicon-dashboard              { &:before { content: "\e141"; } }
+.glyphicon-paperclip              { &:before { content: "\e142"; } }
+.glyphicon-heart-empty            { &:before { content: "\e143"; } }
+.glyphicon-link                   { &:before { content: "\e144"; } }
+.glyphicon-phone                  { &:before { content: "\e145"; } }
+.glyphicon-pushpin                { &:before { content: "\e146"; } }
+.glyphicon-usd                    { &:before { content: "\e148"; } }
+.glyphicon-gbp                    { &:before { content: "\e149"; } }
+.glyphicon-sort                   { &:before { content: "\e150"; } }
+.glyphicon-sort-by-alphabet       { &:before { content: "\e151"; } }
+.glyphicon-sort-by-alphabet-alt   { &:before { content: "\e152"; } }
+.glyphicon-sort-by-order          { &:before { content: "\e153"; } }
+.glyphicon-sort-by-order-alt      { &:before { content: "\e154"; } }
+.glyphicon-sort-by-attributes     { &:before { content: "\e155"; } }
+.glyphicon-sort-by-attributes-alt { &:before { content: "\e156"; } }
+.glyphicon-unchecked              { &:before { content: "\e157"; } }
+.glyphicon-expand                 { &:before { content: "\e158"; } }
+.glyphicon-collapse-down          { &:before { content: "\e159"; } }
+.glyphicon-collapse-up            { &:before { content: "\e160"; } }
+.glyphicon-log-in                 { &:before { content: "\e161"; } }
+.glyphicon-flash                  { &:before { content: "\e162"; } }
+.glyphicon-log-out                { &:before { content: "\e163"; } }
+.glyphicon-new-window             { &:before { content: "\e164"; } }
+.glyphicon-record                 { &:before { content: "\e165"; } }
+.glyphicon-save                   { &:before { content: "\e166"; } }
+.glyphicon-open                   { &:before { content: "\e167"; } }
+.glyphicon-saved                  { &:before { content: "\e168"; } }
+.glyphicon-import                 { &:before { content: "\e169"; } }
+.glyphicon-export                 { &:before { content: "\e170"; } }
+.glyphicon-send                   { &:before { content: "\e171"; } }
+.glyphicon-floppy-disk            { &:before { content: "\e172"; } }
+.glyphicon-floppy-saved           { &:before { content: "\e173"; } }
+.glyphicon-floppy-remove          { &:before { content: "\e174"; } }
+.glyphicon-floppy-save            { &:before { content: "\e175"; } }
+.glyphicon-floppy-open            { &:before { content: "\e176"; } }
+.glyphicon-credit-card            { &:before { content: "\e177"; } }
+.glyphicon-transfer               { &:before { content: "\e178"; } }
+.glyphicon-cutlery                { &:before { content: "\e179"; } }
+.glyphicon-header                 { &:before { content: "\e180"; } }
+.glyphicon-compressed             { &:before { content: "\e181"; } }
+.glyphicon-earphone               { &:before { content: "\e182"; } }
+.glyphicon-phone-alt              { &:before { content: "\e183"; } }
+.glyphicon-tower                  { &:before { content: "\e184"; } }
+.glyphicon-stats                  { &:before { content: "\e185"; } }
+.glyphicon-sd-video               { &:before { content: "\e186"; } }
+.glyphicon-hd-video               { &:before { content: "\e187"; } }
+.glyphicon-subtitles              { &:before { content: "\e188"; } }
+.glyphicon-sound-stereo           { &:before { content: "\e189"; } }
+.glyphicon-sound-dolby            { &:before { content: "\e190"; } }
+.glyphicon-sound-5-1              { &:before { content: "\e191"; } }
+.glyphicon-sound-6-1              { &:before { content: "\e192"; } }
+.glyphicon-sound-7-1              { &:before { content: "\e193"; } }
+.glyphicon-copyright-mark         { &:before { content: "\e194"; } }
+.glyphicon-registration-mark      { &:before { content: "\e195"; } }
+.glyphicon-cloud-download         { &:before { content: "\e197"; } }
+.glyphicon-cloud-upload           { &:before { content: "\e198"; } }
+.glyphicon-tree-conifer           { &:before { content: "\e199"; } }
+.glyphicon-tree-deciduous         { &:before { content: "\e200"; } }
+
+
+// ICOMOON ENTYPO
+.glyphicomoon-phone { &:before { content: "\e600"; } }
+.glyphicomoon-mobile { &:before { content: "\e601"; } }
+.glyphicomoon-mouse { &:before { content: "\e602"; } }
+.glyphicomoon-directions { &:before { content: "\e603"; } }
+.glyphicomoon-mail { &:before { content: "\e604"; } }
+.glyphicomoon-paperplane { &:before { content: "\e605"; } }
+.glyphicomoon-pencil { &:before { content: "\e606"; } }
+.glyphicomoon-feather { &:before { content: "\e607"; } }
+.glyphicomoon-paperclip { &:before { content: "\e608"; } }
+.glyphicomoon-drawer { &:before { content: "\e609"; } }
+.glyphicomoon-reply { &:before { content: "\e60a"; } }
+.glyphicomoon-reply-all { &:before { content: "\e60b"; } }
+.glyphicomoon-forward { &:before { content: "\e60c"; } }
+.glyphicomoon-user { &:before { content: "\e60d"; } }
+.glyphicomoon-users { &:before { content: "\e60e"; } }
+.glyphicomoon-user-add { &:before { content: "\e60f"; } }
+.glyphicomoon-vcard { &:before { content: "\e610"; } }
+.glyphicomoon-export { &:before { content: "\e611"; } }
+.glyphicomoon-location { &:before { content: "\e612"; } }
+.glyphicomoon-map { &:before { content: "\e613"; } }
+.glyphicomoon-compass { &:before { content: "\e614"; } }
+.glyphicomoon-location2 { &:before { content: "\e615"; } }
+.glyphicomoon-target { &:before { content: "\e616"; } }
+.glyphicomoon-share { &:before { content: "\e617"; } }
+.glyphicomoon-sharable { &:before { content: "\e618"; } }
+.glyphicomoon-heart { &:before { content: "\e619"; } }
+.glyphicomoon-heart2 { &:before { content: "\e61a"; } }
+.glyphicomoon-star { &:before { content: "\e61b"; } }
+.glyphicomoon-star2 { &:before { content: "\e61c"; } }
+.glyphicomoon-thumbsup { &:before { content: "\e61d"; } }
+.glyphicomoon-thumbsdown { &:before { content: "\e61e"; } }
+.glyphicomoon-chat { &:before { content: "\e61f"; } }
+.glyphicomoon-comment { &:before { content: "\e620"; } }
+.glyphicomoon-quote { &:before { content: "\e621"; } }
+.glyphicomoon-house { &:before { content: "\e622"; } }
+.glyphicomoon-popup { &:before { content: "\e623"; } }
+.glyphicomoon-search { &:before { content: "\e624"; } }
+.glyphicomoon-flashlight { &:before { content: "\e625"; } }
+.glyphicomoon-printer { &:before { content: "\e626"; } }
+.glyphicomoon-bell { &:before { content: "\e627"; } }
+.glyphicomoon-link { &:before { content: "\e628"; } }
+.glyphicomoon-flag { &:before { content: "\e629"; } }
+.glyphicomoon-cog { &:before { content: "\e62a"; } }
+.glyphicomoon-tools { &:before { content: "\e62b"; } }
+.glyphicomoon-trophy { &:before { content: "\e62c"; } }
+.glyphicomoon-tag { &:before { content: "\e62d"; } }
+.glyphicomoon-camera { &:before { content: "\e62e"; } }
+.glyphicomoon-megaphone { &:before { content: "\e62f"; } }
+.glyphicomoon-moon { &:before { content: "\e630"; } }
+.glyphicomoon-palette { &:before { content: "\e631"; } }
+.glyphicomoon-leaf { &:before { content: "\e632"; } }
+.glyphicomoon-music { &:before { content: "\e633"; } }
+.glyphicomoon-music2 { &:before { content: "\e634"; } }
+.glyphicomoon-new { &:before { content: "\e635"; } }
+.glyphicomoon-graduation { &:before { content: "\e636"; } }
+.glyphicomoon-book { &:before { content: "\e637"; } }
+.glyphicomoon-newspaper { &:before { content: "\e638"; } }
+.glyphicomoon-bag { &:before { content: "\e639"; } }
+.glyphicomoon-airplane { &:before { content: "\e63a"; } }
+.glyphicomoon-lifebuoy { &:before { content: "\e63b"; } }
+.glyphicomoon-eye { &:before { content: "\e63c"; } }
+.glyphicomoon-clock { &:before { content: "\e63d"; } }
+.glyphicomoon-microphone { &:before { content: "\e63e"; } }
+.glyphicomoon-calendar { &:before { content: "\e63f"; } }
+.glyphicomoon-bolt { &:before { content: "\e640"; } }
+.glyphicomoon-thunder { &:before { content: "\e641"; } }
+.glyphicomoon-droplet { &:before { content: "\e642"; } }
+.glyphicomoon-cd { &:before { content: "\e643"; } }
+.glyphicomoon-briefcase { &:before { content: "\e644"; } }
+.glyphicomoon-air { &:before { content: "\e645"; } }
+.glyphicomoon-hourglass { &:before { content: "\e646"; } }
+.glyphicomoon-gauge { &:before { content: "\e647"; } }
+.glyphicomoon-language { &:before { content: "\e648"; } }
+.glyphicomoon-network { &:before { content: "\e649"; } }
+.glyphicomoon-key { &:before { content: "\e64a"; } }
+.glyphicomoon-battery { &:before { content: "\e64b"; } }
+.glyphicomoon-bucket { &:before { content: "\e64c"; } }
+.glyphicomoon-magnet { &:before { content: "\e64d"; } }
+.glyphicomoon-drive { &:before { content: "\e64e"; } }
+.glyphicomoon-cup { &:before { content: "\e64f"; } }
+.glyphicomoon-rocket { &:before { content: "\e650"; } }
+.glyphicomoon-brush { &:before { content: "\e651"; } }
+.glyphicomoon-suitcase { &:before { content: "\e652"; } }
+.glyphicomoon-cone { &:before { content: "\e653"; } }
+.glyphicomoon-earth { &:before { content: "\e654"; } }
+.glyphicomoon-keyboard { &:before { content: "\e655"; } }
+.glyphicomoon-browser { &:before { content: "\e656"; } }
+.glyphicomoon-publish { &:before { content: "\e657"; } }
+.glyphicomoon-progress-3 { &:before { content: "\e658"; } }
+.glyphicomoon-progress-2 { &:before { content: "\e659"; } }
+.glyphicomoon-brogress-1 { &:before { content: "\e65a"; } }
+.glyphicomoon-progress-0 { &:before { content: "\e65b"; } }
+.glyphicomoon-sun { &:before { content: "\e65c"; } }
+.glyphicomoon-sun2 { &:before { content: "\e65d"; } }
+.glyphicomoon-adjust { &:before { content: "\e65e"; } }
+.glyphicomoon-code { &:before { content: "\e65f"; } }
+.glyphicomoon-screen { &:before { content: "\e660"; } }
+.glyphicomoon-infinity { &:before { content: "\e661"; } }
+.glyphicomoon-light-bulb { &:before { content: "\e662"; } }
+.glyphicomoon-creditcard { &:before { content: "\e663"; } }
+.glyphicomoon-database { &:before { content: "\e664"; } }
+.glyphicomoon-voicemail { &:before { content: "\e665"; } }
+.glyphicomoon-clipboard { &:before { content: "\e666"; } }
+.glyphicomoon-cart { &:before { content: "\e667"; } }
+.glyphicomoon-box { &:before { content: "\e668"; } }
+.glyphicomoon-ticket { &:before { content: "\e669"; } }
+.glyphicomoon-rss { &:before { content: "\e66a"; } }
+.glyphicomoon-signal { &:before { content: "\e66b"; } }
+.glyphicomoon-thermometer { &:before { content: "\e66c"; } }
+.glyphicomoon-droplets { &:before { content: "\e66d"; } }
+.glyphicomoon-uniE66E { &:before { content: "\e66e"; } }
+.glyphicomoon-statistics { &:before { content: "\e66f"; } }
+.glyphicomoon-pie { &:before { content: "\e670"; } }
+.glyphicomoon-bars { &:before { content: "\e671"; } }
+.glyphicomoon-graph { &:before { content: "\e672"; } }
+.glyphicomoon-lock { &:before { content: "\e673"; } }
+.glyphicomoon-lock-open { &:before { content: "\e674"; } }
+.glyphicomoon-logout { &:before { content: "\e675"; } }
+.glyphicomoon-login { &:before { content: "\e676"; } }
+.glyphicomoon-checkmark { &:before { content: "\e677"; } }
+.glyphicomoon-cross { &:before { content: "\e678"; } }
+.glyphicomoon-minus { &:before { content: "\e679"; } }
+.glyphicomoon-plus { &:before { content: "\e67a"; } }
+.glyphicomoon-cross2 { &:before { content: "\e67b"; } }
+.glyphicomoon-minus2 { &:before { content: "\e67c"; } }
+.glyphicomoon-plus2 { &:before { content: "\e67d"; } }
+.glyphicomoon-cross3 { &:before { content: "\e67e"; } }
+.glyphicomoon-minus3 { &:before { content: "\e67f"; } }
+.glyphicomoon-plus3 { &:before { content: "\e680"; } }
+.glyphicomoon-erase { &:before { content: "\e681"; } }
+.glyphicomoon-blocked { &:before { content: "\e682"; } }
+.glyphicomoon-info { &:before { content: "\e683"; } }
+.glyphicomoon-info2 { &:before { content: "\e684"; } }
+.glyphicomoon-question { &:before { content: "\e685"; } }
+.glyphicomoon-help { &:before { content: "\e686"; } }
+.glyphicomoon-warning { &:before { content: "\e687"; } }
+.glyphicomoon-cycle { &:before { content: "\e688"; } }
+.glyphicomoon-cw { &:before { content: "\e689"; } }
+.glyphicomoon-ccw { &:before { content: "\e68a"; } }
+.glyphicomoon-shuffle { &:before { content: "\e68b"; } }
+.glyphicomoon-arrow { &:before { content: "\e68c"; } }
+.glyphicomoon-arrow2 { &:before { content: "\e68d"; } }
+.glyphicomoon-retweet { &:before { content: "\e68e"; } }
+.glyphicomoon-loop { &:before { content: "\e68f"; } }
+.glyphicomoon-history { &:before { content: "\e690"; } }
+.glyphicomoon-back { &:before { content: "\e691"; } }
+.glyphicomoon-switch { &:before { content: "\e692"; } }
+.glyphicomoon-list { &:before { content: "\e693"; } }
+.glyphicomoon-add-to-list { &:before { content: "\e694"; } }
+.glyphicomoon-layout { &:before { content: "\e695"; } }
+.glyphicomoon-list2 { &:before { content: "\e696"; } }
+.glyphicomoon-text { &:before { content: "\e697"; } }
+.glyphicomoon-text2 { &:before { content: "\e698"; } }
+.glyphicomoon-document { &:before { content: "\e699"; } }
+.glyphicomoon-docs { &:before { content: "\e69a"; } }
+.glyphicomoon-landscape { &:before { content: "\e69b"; } }
+.glyphicomoon-pictures { &:before { content: "\e69c"; } }
+.glyphicomoon-video { &:before { content: "\e69d"; } }
+.glyphicomoon-music3 { &:before { content: "\e69e"; } }
+.glyphicomoon-folder { &:before { content: "\e69f"; } }
+.glyphicomoon-archive { &:before { content: "\e6a0"; } }
+.glyphicomoon-trash { &:before { content: "\e6a1"; } }
+.glyphicomoon-upload { &:before { content: "\e6a2"; } }
+.glyphicomoon-download { &:before { content: "\e6a3"; } }
+.glyphicomoon-disk { &:before { content: "\e6a4"; } }
+.glyphicomoon-install { &:before { content: "\e6a5"; } }
+.glyphicomoon-cloud { &:before { content: "\e6a6"; } }
+.glyphicomoon-upload2 { &:before { content: "\e6a7"; } }
+.glyphicomoon-bookmark { &:before { content: "\e6a8"; } }
+.glyphicomoon-bookmarks { &:before { content: "\e6a9"; } }
+.glyphicomoon-book2 { &:before { content: "\e6aa"; } }
+.glyphicomoon-play { &:before { content: "\e6ab"; } }
+.glyphicomoon-pause { &:before { content: "\e6ac"; } }
+.glyphicomoon-record { &:before { content: "\e6ad"; } }
+.glyphicomoon-stop { &:before { content: "\e6ae"; } }
+.glyphicomoon-next { &:before { content: "\e6af"; } }
+.glyphicomoon-previous { &:before { content: "\e6b0"; } }
+.glyphicomoon-first { &:before { content: "\e6b1"; } }
+.glyphicomoon-last { &:before { content: "\e6b2"; } }
+.glyphicomoon-resize-enlarge { &:before { content: "\e6b3"; } }
+.glyphicomoon-resize-shrink { &:before { content: "\e6b4"; } }
+.glyphicomoon-volume { &:before { content: "\e6b5"; } }
+.glyphicomoon-sound { &:before { content: "\e6b6"; } }
+.glyphicomoon-mute { &:before { content: "\e6b7"; } }
+.glyphicomoon-flow-cascade { &:before { content: "\e6b8"; } }
+.glyphicomoon-flow-branch { &:before { content: "\e6b9"; } }
+.glyphicomoon-flow-tree { &:before { content: "\e6ba"; } }
+.glyphicomoon-flow-line { &:before { content: "\e6bb"; } }
+.glyphicomoon-flow-parallel { &:before { content: "\e6bc"; } }
+.glyphicomoon-arrow-left { &:before { content: "\e6bd"; } }
+.glyphicomoon-arrow-down { &:before { content: "\e6be"; } }
+.glyphicomoon-arrow-up-upload { &:before { content: "\e6bf"; } }
+.glyphicomoon-arrow-right { &:before { content: "\e6c0"; } }
+.glyphicomoon-arrow-left2 { &:before { content: "\e6c1"; } }
+.glyphicomoon-arrow-down2 { &:before { content: "\e6c2"; } }
+.glyphicomoon-arrow-up { &:before { content: "\e6c3"; } }
+.glyphicomoon-arrow-right2 { &:before { content: "\e6c4"; } }
+.glyphicomoon-arrow-left3 { &:before { content: "\e6c5"; } }
+.glyphicomoon-arrow-down3 { &:before { content: "\e6c6"; } }
+.glyphicomoon-arrow-up2 { &:before { content: "\e6c7"; } }
+.glyphicomoon-arrow-right3 { &:before { content: "\e6c8"; } }
+.glyphicomoon-arrow-left4 { &:before { content: "\e6c9"; } }
+.glyphicomoon-arrow-down4 { &:before { content: "\e6ca"; } }
+.glyphicomoon-arrow-up3 { &:before { content: "\e6cb"; } }
+.glyphicomoon-arrow-right4 { &:before { content: "\e6cc"; } }
+.glyphicomoon-arrow-left5 { &:before { content: "\e6cd"; } }
+.glyphicomoon-arrow-down5 { &:before { content: "\e6ce"; } }
+.glyphicomoon-arrow-up4 { &:before { content: "\e6cf"; } }
+.glyphicomoon-arrow-right5 { &:before { content: "\e6d0"; } }
+.glyphicomoon-arrow-left6 { &:before { content: "\e6d1"; } }
+.glyphicomoon-arrow-down6 { &:before { content: "\e6d2"; } }
+.glyphicomoon-arrow-up5 { &:before { content: "\e6d3"; } }
+.glyphicomoon-arrow-right6 { &:before { content: "\e6d4"; } }
+.glyphicomoon-arrow-left7 { &:before { content: "\e6d5"; } }
+.glyphicomoon-arrow-down7 { &:before { content: "\e6d6"; } }
+.glyphicomoon-arrow-up6 { &:before { content: "\e6d7"; } }
+.glyphicomoon-uniE6D8 { &:before { content: "\e6d8"; } }
+.glyphicomoon-arrow-left8 { &:before { content: "\e6d9"; } }
+.glyphicomoon-arrow-down8 { &:before { content: "\e6da"; } }
+.glyphicomoon-arrow-up7 { &:before { content: "\e6db"; } }
+.glyphicomoon-arrow-right7 { &:before { content: "\e6dc"; } }
+.glyphicomoon-menu { &:before { content: "\e6dd"; } }
+.glyphicomoon-ellipsis { &:before { content: "\e6de"; } }
+.glyphicomoon-dots { &:before { content: "\e6df"; } }
+.glyphicomoon-dot { &:before { content: "\e6e0"; } }
+.glyphicomoon-cc { &:before { content: "\e6e1"; } }
+.glyphicomoon-cc-by { &:before { content: "\e6e2"; } }
+.glyphicomoon-cc-nc { &:before { content: "\e6e3"; } }
+.glyphicomoon-cc-nc-eu { &:before { content: "\e6e4"; } }
+.glyphicomoon-cc-nc-jp { &:before { content: "\e6e5"; } }
+.glyphicomoon-cc-sa { &:before { content: "\e6e6"; } }
+.glyphicomoon-cc-nd { &:before { content: "\e6e7"; } }
+.glyphicomoon-cc-pd { &:before { content: "\e6e8"; } }
+.glyphicomoon-cc-zero { &:before { content: "\e6e9"; } }
+.glyphicomoon-cc-share { &:before { content: "\e6ea"; } }
+.glyphicomoon-cc-share2 { &:before { content: "\e6eb"; } }
+.glyphicomoon-github { &:before { content: "\e6ec"; } }
+.glyphicomoon-github2 { &:before { content: "\e6ed"; } }
+.glyphicomoon-flickr { &:before { content: "\e6ee"; } }
+.glyphicomoon-flickr2 { &:before { content: "\e6ef"; } }
+.glyphicomoon-vimeo { &:before { content: "\e6f0"; } }
+.glyphicomoon-vimeo2 { &:before { content: "\e6f1"; } }
+.glyphicomoon-twitter { &:before { content: "\e6f2"; } }
+.glyphicomoon-twitter2 { &:before { content: "\e6f3"; } }
+.glyphicomoon-facebook { &:before { content: "\e6f4"; } }
+.glyphicomoon-facebook2 { &:before { content: "\e6f5"; } }
+.glyphicomoon-facebook3 { &:before { content: "\e6f6"; } }
+.glyphicomoon-googleplus { &:before { content: "\e6f7"; } }
+.glyphicomoon-googleplus2 { &:before { content: "\e6f8"; } }
+.glyphicomoon-pinterest { &:before { content: "\e6f9"; } }
+.glyphicomoon-pinterest2 { &:before { content: "\e6fa"; } }
+.glyphicomoon-tumblr { &:before { content: "\e6fb"; } }
+.glyphicomoon-tumblr2 { &:before { content: "\e6fc"; } }
+.glyphicomoon-linkedin { &:before { content: "\e6fd"; } }
+.glyphicomoon-linkedin2 { &:before { content: "\e6fe"; } }
+.glyphicomoon-dribbble { &:before { content: "\e6ff"; } }
+.glyphicomoon-dribbble2 { &:before { content: "\e700"; } }
+.glyphicomoon-stumbleupon { &:before { content: "\e701"; } }
+.glyphicomoon-stumbleupon2 { &:before { content: "\e702"; } }
+.glyphicomoon-lastfm { &:before { content: "\e703"; } }
+.glyphicomoon-lastfm2 { &:before { content: "\e704"; } }
+.glyphicomoon-rdio { &:before { content: "\e705"; } }
+.glyphicomoon-rdio2 { &:before { content: "\e706"; } }
+.glyphicomoon-spotify { &:before { content: "\e707"; } }
+.glyphicomoon-spotify2 { &:before { content: "\e708"; } }
+.glyphicomoon-qq { &:before { content: "\e709"; } }
+.glyphicomoon-instagram { &:before { content: "\e70a"; } }
+.glyphicomoon-dropbox { &:before { content: "\e70b"; } }
+.glyphicomoon-evernote { &:before { content: "\e70c"; } }
+.glyphicomoon-flattr { &:before { content: "\e70d"; } }
+.glyphicomoon-skype { &:before { content: "\e70e"; } }
+.glyphicomoon-skype2 { &:before { content: "\e70f"; } }
+.glyphicomoon-renren { &:before { content: "\e710"; } }
+.glyphicomoon-sina-weibo { &:before { content: "\e711"; } }
+.glyphicomoon-paypal { &:before { content: "\e712"; } }
+.glyphicomoon-picasa { &:before { content: "\e713"; } }
+.glyphicomoon-soundcloud { &:before { content: "\e714"; } }
+.glyphicomoon-mixi { &:before { content: "\e715"; } }
+.glyphicomoon-behance { &:before { content: "\e716"; } }
+.glyphicomoon-circles { &:before { content: "\e717"; } }
+.glyphicomoon-vk { &:before { content: "\e718"; } }
+.glyphicomoon-smashing { &:before { content: "\e719"; } }
+
+
+

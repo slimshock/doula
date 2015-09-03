@@ -9,44 +9,64 @@
 {% block content %}
 
 
-  <ul id="profile-nav">
-      <li><a href="{% url 'userena_profile_detail' user.username %}">{% trans "View profile" %}</a></li>
-      <li class="selected"><a href="{% url 'userena_profile_edit' user.username %}">{% trans "Edit details" %}</a></li>
-      <li><a href="{% url 'userena_password_change' user.username %}">{% trans "Change password" %}</a></li>
-      <li><a href="{% url 'userena_email_change' user.username %}">{% trans "Change email" %}</a></li>
-  </ul>
+<section id="form-section" style="padding: 20px 0px;">
+
+    <div class="form-wrap">
+        <div>
+            <ul class="navprofile">
+                <li style="color:#34AADC;"><a href="{% url 'userena_profile_detail' user.username %}"><span>{% trans 'View profile' %}</span></a></li>
+                <li class="selected"><a href="{% url 'userena_profile_edit' user.username %}">{% trans "Edit profile" %}</a></li>
+                <li><a href="{% url 'userena_password_change' user.username %}">{% trans "Change password" %}</a></li>
+                <!--
+                <li class="last"><a href="{% url 'userena_email_change' user.username %}">{% trans "Change email" %}</a></li>
+                -->
+            </ul>
+        </div>
+        <br/>
+      <h1 class="h1" style="padding-top: 60px;">Edit Profile</h1>
+
+      <div class="box">
+
+        <form action="" enctype="multipart/form-data" method="post">
+
+            {% csrf_token %}
+            <fieldset>
 
 
-   <form action="" enctype="multipart/form-data" method="post">
-       {% if user.username == account.user.username %}
-          <ul id="box-nav">
-              <li class="first"><a href="{% url 'userena_detail' user.username %}"><span>{% trans 'View profile' %}</span></a></li>
-              <li class="selected"><a href="{% url 'userena_edit' account.user.username %}">{% trans "Edit profile" %}</a></li>
-              <li><a href="{% url 'userena_password_change' account.user.username %}">{% trans "Change password" %}</a></li>
-              <li class="last"><a href="{% url 'userena_email_change' account.user.username %}">{% trans "Change email" %}</a></li>
-          </ul>
-          {% endif %}
-       {% csrf_token %}
-        <fieldset>
-        <legend>{% trans "Edit Profile" %}</legend>
-        <!--{{ form.as_p }}-->
-            {% for field in form %}
-                {% if field.name != 'mugshot' and field.name != 'privacy' and field.name != 'language' %}
-                    {% if field.is_hidden %}
-                        {{ field }}
-                    {% else %}
-                        <div class="form-row {% if field.errors %}errors{% else %}valid{% endif %}">
-                            {{ field.errors }}
-                        <p class="{% if field.field.required %}required{% else %}optional{% endif %}">
-                            <label for="{{ field.auto_id }}">{{ field.label }}</label>
-                            {{ field }}
-                            {% if field.help_text %}<span class="help-text">{{ field.help_text|linebreaksbr }}</span>{% endif %}
-                        </p>
+                {% for field in form %}
+                    {% if not field.name = 'mugshot' and not field.name = 'privacy' and not field.name = 'language' and not field.name = 'birth_date' %}
+                        <div class="form-group clearfix">
+                            <div class="col-md-12">
+                                <!--<label for="{{ field.id }}">{{ field.label }} {% if field.name = 'birth_date' %} ( YYYY-MM-DD ) {% endif %}</label><br/>-->
+                                <label for="{{ field.id }}">{{ field.label }}</label><br/>
+                                {{ field }}
+                                {% if field.errors %}
+                                    {% for error in field.errors %}
+                                        <p style="color: red">{{ error }}</p>
+                                    {% endfor %}
+                                {% endif %}
+                            </div>
                         </div>
                     {% endif %}
-                {% endif %}
-            {% endfor %}
-        </fieldset>
-        <input type="submit" value="{% trans "Save changes" %}" />
-    </form>
+                {% endfor %}
+
+
+<!--
+                <legend>{% trans "Edit Profile" %}</legend>
+                {{ form.as_p }}
+-->
+            </fieldset>
+            <div class="form-group clearfix">
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary btn-green btn-lg">Save changes</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /box -->
+    </div>
+</section>
+
+
+
 {% endblock %}

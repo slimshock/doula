@@ -2,22 +2,160 @@
 {% load url from future %}
 {% block content %}
 
-<div id="content" xmlns="http://www.w3.org/1999/html">
-
         {% if messages %}
-            <ul class="messages">
+            <div class="alert alert-info">
                 {% for message in messages %}
-                    <li>{{ message }}</li>
+                    {{ message }} <br/>
                 {% endfor %}
-            </ul>
+            </div>
         {% endif %}
 
-  {% for key, value in form.errors.items %}
-      <p>{{ value }}</p>
-  {% endfor %}
+<section id="form-section" style="padding: 20px 0px;">
+    <div class="form-wrap">
+      <h1 class="h1">Donate</h1>
+       <p>Fields marked with * are required</p>
+      <div class="box">
+
+        {% for key, value in form.errors.items %}
+              <p>{{ value }}</p>
+        {% endfor %}
 
 {%if project%}
 {%for item in project%}
+
+        <form role="form" action="" method="post">
+            {% csrf_token %}
+            <fieldset>
+
+                <input type="hidden" value={{item.pk}} name="pid">
+                {% if user.is_authenticated %}
+                    <input type="hidden" value="{{user.id}}" name="uid">
+                    <input type="hidden" value="{{user.username}}" name="username">
+                    <input type="hidden" value="{{user.email}}" name="email">
+                {% else %}
+                    <input type="hidden" value="-1" name="uid">
+                {% endif %}
+
+                <div class="form-group clearfix">
+                    <div class="col-md-6">
+                      <label for="id_number">* Card Number</label>
+                      <input id="id_number" name="number" type="number" class="form-control" placeholder="" >
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="id_cvc">* CCV Number</label>
+                      <input id="id_cvc" name="cvc" size="4" type="text" class="form-control" placeholder="" >
+                    </div>
+                </div>
+
+                <div class="form-group clearfix">
+                    <div class="col-md-6">
+                      <label for="id_expiration">* Expiration</label><br/>
+                            <select id="id_expiration_0" name="expiration_0">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        /
+                        <select id="id_expiration_1" name="expiration_1">
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="id_amount">* Amount</label>
+                      <input id="id_amount" name="amount" type="number" class="form-control" placeholder="" >
+                    </div>
+                </div>
+
+                {% if not user.is_authenticated %}
+
+                    <div class="form-group clearfix">
+                        <div class="col-md-6">
+                          <label for="id_number">Name</label>
+                          <input id="id_username" name="username" type="text" class="form-control" placeholder="" >
+                        </div>
+
+                        <div class="col-md-6">
+                          <label for="id_cvc">Email</label>
+                          <input id="id_email" name="email" type="text" class="form-control" placeholder="" >
+                        </div>
+                    </div>
+                {% endif %}
+
+
+                <div class="form-group clearfix">
+
+                </div>
+
+                <div class="form-group clearfix">
+                    <div class="col-md-12">
+                      <label for="id_comment">Comments (Optional)</label>
+                      <input id="id_comment" name="comment" type="text" maxlength="200" class="form-control" placeholder="">
+                    </div>
+                </div>
+
+              <div class="form-group clearfix">
+                <div class="col-md-5">
+                  <button type="submit" class="btn btn-primary btn-green btn-lg">Donate</button>
+                </div>
+                    {% if not user.is_authenticated %}
+                <div class="col-md-7">
+                   <p class="forgot">Registered already? <a href="{% url 'userena_signin' %}">Sign Up</a> as Doula</p>
+                </div>
+                    {% endif %}
+              </div>
+
+              <div class="form-group clearfix">
+                <div class="col-md-12">
+                  <p>All payments are processed securely using <a target="_blank" href="https://stripe.com/">stripe</a> payments.</p>
+                  <p>A Small service charge amounting to 5% of your donation plus $2 processing fee will be added.</p>
+                </div>
+              </div>
+
+            </fieldset>
+        </form>
+{%endfor%}
+{% endif %}
+
+
+      </div>
+      <!-- /box -->
+    </div>
+</section>
+
+
+<!--
+
+
+<div id="content" xmlns="http://www.w3.org/1999/html">
+
+
+
+
 
   <form action="" method="post">{% csrf_token %}
     <input type="hidden" value={{item.pk}} name="pid">
@@ -27,14 +165,15 @@
         <input type="hidden" value="-1" name="uid">
     {% endif %}
     {% for field in form %}
-       <div class="form-row {% if field.errors %}errors{% else %}valid{% endif %}">
-                            {{ field.errors }}
-                        <p class="{% if field.field.required %}required{% else %}optional{% endif %}">
-                            <label for="{{ field.auto_id }}">{{ field.label }}</label>
-                            {{ field }}
-                            {% if field.help_text %}<span class="help-text">{{ field.help_text|linebreaksbr }}</span>{% endif %}
-                        </p>
-                        </div>
+        <div class="form-row {% if field.errors %}errors{% else %}valid{% endif %}">
+
+            {{ field.errors }}
+            <p class="{% if field.field.required %}required{% else %}optional{% endif %}">
+                <label for="{{ field.auto_id }}">{{ field.label }}</label>
+                {{ field }}
+                {% if field.help_text %}<span class="help-text">{{ field.help_text|linebreaksbr }}</span>{% endif %}
+            </p>
+        </div>
     {% endfor %}
     
     <br>
@@ -42,12 +181,8 @@
   </form>
 
     <br/>
-    {% if not user.is_authenticated %}
-        What to <a href="{% url 'userena_signup' %}"><span>Signup</span></a> as Doula
-    {% endif %}
 
-
-{%endfor%}
-{% endif %}
 </div>
+
+-->
 {% endblock %}

@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% block content %}
+
+        {% if messages %}
+            <div class="alert alert-info">
+                {% for message in messages %}
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+
+<section id="form-section" style="padding: 20px 0px;">
+    <div class="form-wrap">
+      <h1 class="h1">Create Doula Profile</h1>
+      <div class="box">
+
+{%if user.is_authenticated%}
+
+
+       <form name="" role="form" action="{{BASE_URL}}/doula/profile/edit" method="post" enctype="multipart/form-data">
+            <fieldset>
+            {% csrf_token %}
+<!--
+                {{form.as_ul}}
+-->
+
+          {%for item in doulapro%}
+
+            <input  id="id_userid" name="userid" type="hidden" value="{{user.id}}">
+
+            <div class="form-group clearfix">
+                <div class="col-md-12">
+                  <label for="id_bio_pic">* Bio Photo</label><span style="float: right;" id="id_bio_pic_error"></span>
+                  <input type="file" id="id_bio_pic" name="bio_pic">
+                </div>
+            </div>
+
+            <div class="form-group clearfix">
+                <div class="col-md-12">
+                  <label for="id_about_me">* About me</label> <span style="float: right;" id="about_me_error"></span>
+                  <textarea  id="id_about_me" name="about_me" cols="30" rows="4" class="form-control" placeholder="">{{item.about_me}}</textarea>
+                </div>
+            </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_education">* Education</label><span style="float: right;" id="education_error"></span>
+              <textarea  id="id_education" name="education" cols="30" rows="4" class="form-control" placeholder="">{{item.education}}</textarea>
+            </div>
+          </div>
+
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_why_they_doula">* Why We Want Doula</label><span style="float: right;" id="why_they_doula_error"></span>
+              <textarea  id="id_why_they_doula" name="why_they_doula" cols="30" rows="4" placeholder="" class="form-control">{{item.why_they_doula}}</textarea>
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <label for="id_testimonials">* Testimonials</label><span style="float: right;" id="testimonials_error"></span>
+              <textarea id="id_testimonials" name="testimonials" cols="30" rows="4" placeholder="" class="form-control">{{item.testimonials}}</textarea>
+            </div>
+          </div>
+
+          <div class="form-group clearfix">
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary btn-green btn-lg">Create Doula Profile</button>
+            </div>
+          </div>
+
+          {% endfor %}
+            </fieldset>
+        </form>
+
+
+{%else%}
+
+    <p>You must be <a href="{% url 'userena_signin' %}">Sign in</a> to create a Doula.</p>
+
+{%endif%}
+
+      </div>
+    </div>
+</section>
+
+{% endblock %}

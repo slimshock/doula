@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load humanize %}
+{% block content %}
+
+        {% if messages %}
+            <div class="alert alert-info">
+                {% for message in messages %}
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+<section id="trending">
+    <div class="container">
+      <div class="row">
+
+           {%if doulaprofile%}
+              {%for item in doulaprofile%}
+                <p>Proceed to your <a href="{{BASE_URL}}/doula/profile/{{user.id}}">doula profile.</a></p>
+              {% endfor %}
+            {% else %}
+                <p>You want to <a href="{{BASE_URL}}/doula/profile/create">create</a> doula profile?</p>
+                <p>To find a Doula near you check this <a target="_blank" href="http://www.dona.org/mothers/find_a_doula.php">link</a>.</p>
+
+            {% endif %}
+
+
+            {%if doulaprofiles%}
+            <div class="form-group clearfix">
+                <div class="col-md-4">
+                    <h3>Doula List</h3>
+                </div>
+            </div>
+
+
+                {%for item in doulaprofiles%}
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 col-xxs-12">
+                          <div class="fundraiser-entry clearfix" style="height: 360px;">
+                            <a href="{{BASE_URL}}/doula/profile/{{item.userid}}" class="crop" style="background-image: url('/media/{{item.bio_pic}}')"></a>
+                            <div class="fundraiser-intro-wrap">
+
+                                <a href="{{BASE_URL}}/doula/profile/{{item.userid}}"><h3 class="post-username" style="color:#34AADC;">{{item.first_name}} {{item.last_name}}</h3></a>
+                              <p style="text-align: justify;">{{item.about_me|slice:":150"}}</p>
+                            </div>
+                          </div>
+                    </div>
+<!--
+                  <div class="col-lg-3 col-md-4 col-xs-6 col-xxs-12">
+                    <div class="fundraiser-entry clearfix">
+                    <div class="col-md-3" style="padding-top: 12px;">
+                        <a href="{{BASE_URL}}/doula/profile/{{item.userid}}"><img src="/media/{{item.bio_pic}}" alt="Image" style="width: 150px;"></a>
+                        <a href="{{BASE_URL}}/doula/profile/{{item.userid}}"><h3 class="post-username" style="color:#34AADC;">{{item.username}}</h3></a>
+                        <p style="text-align: justify;">{{item.about_me|slice:":150"}}</p>
+                    </div>
+                  </div>
+                  -->
+                {% endfor %}
+            {% endif %}
+
+      </div>
+
+    </div>
+</section>
+
+{% endblock %}

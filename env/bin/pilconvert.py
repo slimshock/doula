@@ -1,4 +1,4 @@
-#!/home/slimshock/django/doulaap/env/bin/python
+#!/var/www/html/doulaap/env/bin/python
 #
 # The Python Imaging Library.
 # $Id$

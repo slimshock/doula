@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load humanize %}
+{% block content %}
+
+
+        {% if messages %}
+            <div class="alert alert-info">
+                {% for message in messages %}
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+{%if doulaprofile%}
+    {%for item in doulaprofile%}
+
+
+        <section id="fundraiser-single">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1 class="h1">Doula Profile</h1>
+                    <br/>
+
+                </div>
+              </div>
+              <!-- /row -->
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="fundraiser-single-img">
+
+                        <img src="/media/{{item.bio_pic}}" alt="Image" class="img-responsive">
+                  </div>
+                </div>
+
+              </div>
+              <!-- /row -->
+
+            </div>
+            <!-- /container -->
+            <div id="doula-tabs">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <ul class="tab-nav clearfix">
+                      <li class="active"><a href="#details">Details</a></li>
+                    </ul>
+                    <div id="tabs-content">
+                      <div class="tab-content active clearfix" rel="details">
+                        <ul class="post-wrap">
+                            {% if item.userid = user.id %}
+                                <a href="{{BASE_URL}}/doula/profile/edit" class="btn btn-primary btn-green pull-right">Edit Profile</a>
+                            {% endif %}
+                            <li class="post-entry">
+                                <h3 class="post-username">About Me</h3>
+
+
+
+                                <div class="post-message">
+                                    <p class="pull-left">{{item.about_me}}</p>
+                                </div>
+                            </li>
+                            <li class="post-entry">
+                                <h3 class="post-username">Why they are a doula</h3>
+                                <div class="post-message">
+                                    <p class="pull-left">{{item.why_they_doula}}</p>
+                                </div>
+                            </li>
+                            <li class="post-entry">
+                                <h3 class="post-username">Education / Qualification</h3>
+                                <div class="post-message">
+                                    <p class="pull-left">{{item.education}}</p>
+                                </div>
+                            </li>
+
+                            <li class="post-entry">
+                                <h3 class="post-username">Testimonials</h3>
+                                <div class="post-message">
+                                    <blockquote>
+                                        <p>{{item.testimonials}}</p>
+                                    </blockquote>
+                                </div>
+                            </li>
+
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+
+                  </div>
+                </div>
+                <!-- /row -->
+              </div>
+              <!-- /container -->
+            </div>
+          </section>
+
+        <section id="spread-the-word">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <div class="share text-center">
+                    <h2>Spread The Word</h2>
+                    <a href="#" class="btn ghost-btn-share">Share On Twitter</a>
+                    <a href="#" class="btn ghost-btn-share">Share On Facebook</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+    {%endfor%}
+{% endif %}
+
+{% endblock %}

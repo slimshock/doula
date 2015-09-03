@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% block content %}
+
+        {% if messages %}
+            <div class="alert alert-info">
+                {% for message in messages %}
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+<section id="donate" class="content">
+
+{%if project%}
+{%for item in project%}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="h1">Enter Your Donation</h1>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row doula-donate-info">
+        <div class="col-md-2">
+          <img src="/media/{{item.img_link}}" alt="Image" class="img-responsive">
+        </div>
+        <div class="col-md-10">
+          <h2 class="h2">{{ item.title }}</h2>
+          <p>{{ item.our_doula }}</p>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row">
+        <div class="col-md-12">
+          <form action="#" class="form-inline">
+
+            <div class="form-group pull-right clearfix">
+              <label for="amt" class="amt-label">Enter the amount you would like to give:</label>
+              <div class="input-group input-amt pull-right">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" id="amt">
+                <span class="input-group-addon">.00</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <p class="note">* Your donation is always secure. You don't need an account to donate.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="paginate pull-right">
+                  <button class="btn btn-primary btn-green btn-lg pull-right">Continue <i class="glyphicomoon glyphicomoon-arrow-right4"></i></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      </div>
+      <!-- /container -->
+
+{%endfor%}
+{% endif %}
+  </section>
+{% endblock %}

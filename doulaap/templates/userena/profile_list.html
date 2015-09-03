@@ -5,6 +5,16 @@
 {% block content_title %}<h2 class="content-title">{% trans 'Profiles' %}</h2>{% endblock %}
 
 {% block content %}
+
+{% if messages %}
+    <div class="alert alert-info">
+        {% for message in messages %}
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+        {{ message }}
+        {% endfor %}
+    </div>
+{% endif %}
+
 <ul id="account_list">
     {% for profile in profile_list %}
     <li>

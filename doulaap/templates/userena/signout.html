@@ -1,0 +1,28 @@
+{% extends 'userena/base_userena.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Signed out" %}{% endblock %}
+{% block content_title %}<h2>{% trans "You have been signed out" %}.</h2>{% endblock %}
+
+{% block content %}
+
+{% if messages %}
+    <div class="alert alert-info">
+        {% for message in messages %}
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+        {{ message }}
+        {% endfor %}
+    </div>
+{% endif %}
+
+<section id="trending">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <p>{% trans "You have been signed out." %}</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+{% endblock %}

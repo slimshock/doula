@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load url from future %}
+{% load humanize %}
+{% block content %}
+
+        {% if messages %}
+            <div class="alert alert-info">
+                {% for message in messages %}
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+<section id="trending">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="owl-demo">
+
+            {%if project%}
+                {%for item in project%}
+                    {% if user.is_authenticated and user.id == 1 %}
+
+
+                        <div class="item">
+                          <div class="fundraiser-entry clearfix">
+                            <a href="{{BASE_URL}}/doula/show/{{item.id}}"><img src="/media/{{item.img_link}}" alt="Image"></a>
+                            <div class="fundraiser-intro-wrap">
+                              <h3><a href="{{BASE_URL}}/doula/show/{{item.id}}">{{item.title}}</a></h3>
+                              <p>{{item.project_desc}}</p>
+                              <div class="fundraiser-stat">
+                                <div class="money-raised"><strong>${{ item.totalpledgeamount|floatformat:2|intcomma }}</strong> <span>USD</span></div>
+                                <div class="fundraiser-progress progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="{{item.percent}}" aria-valuemin="0" aria-valuemax="100" style="width: {{item.percent}}%;">
+                                    <span class="sr-only">{{item.percent}}</span>
+                                  </div>
+                                </div>
+                                <div class="fundraiser-percent-daysleft clearfix">
+                                  <span class="percent pull-left">{{item.percent}}%</span>
+                                  <span class="daysleft pull-right"> {{ item.expd }} days left</span>
+                                </div>
+
+                                {% if item.is_review == 0 %}
+                                  <a href="{{BASE_URL}}/doula/confirm_project/{{item.pk}}" class="pull-right ghost-btn-white trending-btn" style="margin-bottom: 10px;">Confirm doula</a>
+                                {% endif %}
+
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /item -->
+
+
+
+                    {% else %}
+                        {% if item.is_review %}
+
+
+                            <div class="item">
+                              <div class="fundraiser-entry clearfix">
+                                <a href="{{BASE_URL}}/doula/show/{{item.id}}"><img src="/media/{{item.img_link}}" alt="Image"></a>
+                                <div class="fundraiser-intro-wrap">
+                                  <h3><a href="{{BASE_URL}}/doula/show/{{item.id}}">{{item.title}}</a></h3>
+                                  <p>{{item.project_desc}}</p>
+                                  <div class="fundraiser-stat">
+                                    <div class="money-raised"><strong>${{ item.totalpledgeamount|floatformat:2|intcomma }}</strong> <span>USD</span></div>
+                                    <div class="fundraiser-progress progress">
+                                      <div class="progress-bar" role="progressbar" aria-valuenow="{{item.percent}}" aria-valuemin="0" aria-valuemax="100" style="width: {{item.percent}}%;">
+                                        <span class="sr-only">{{item.percent}}</span>
+                                      </div>
+                                    </div>
+                                    <div class="fundraiser-percent-daysleft clearfix">
+                                      <span class="percent pull-left">{{item.percent}}%</span>
+                                      <span class="daysleft pull-right"> {{ item.expd }} days left</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- /item -->
+
+
+                        {%endif%}
+                    {%endif%}
+
+                {%endfor%}
+            {%endif%}
+
+          </div>
+          <!-- /owl-demo -->
+        </div>
+      </div>
+
+    </div>
+</section>
+
+<section id="spread-the-word">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="share text-center">
+            <h2>Spread The Word</h2>
+            <a href="#" class="btn ghost-btn-share">Share On Twitter</a>
+            <a href="#" class="btn ghost-btn-share">Share On Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}

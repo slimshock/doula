@@ -1,9 +1,436 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/doulaprofile/models.py" description="class Doulaprofile(models.Model):" line="15" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="168a319d-aa11-4d5f-98ec-ef4c1fda44ea" name="Default" comment="" />
+    <list default="true" id="168a319d-aa11-4d5f-98ec-ef4c1fda44ea" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doulaprofile/templates/doulaprofile_list_org.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/css/master.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/arrow-down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/bg-container.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/crew.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/icon-browse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/icon-demo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/icon-docs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/icon-download.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/lissy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/stripe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/trans.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/try.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/userena.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doulaap/static/img/userina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/Pillow-2.5.3-py2.7.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/Pillow-2.5.3-py2.7.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/Pillow-2.5.3-py2.7.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/Pillow-2.5.3-py2.7.egg-info/installed-files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/Pillow-2.5.3-py2.7.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/Pillow-2.5.3-py2.7.egg-info/zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails-2.1-py2.7.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails-2.1-py2.7.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails-2.1-py2.7.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails-2.1-py2.7.egg-info/installed-files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails-2.1-py2.7.egg-info/not-zip-safe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails-2.1-py2.7.egg-info/requires.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails-2.1-py2.7.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests-0.13.2-py2.7.egg-info/PKG-INFO" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests-0.13.2-py2.7.egg-info/SOURCES.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests-0.13.2-py2.7.egg-info/dependency_links.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests-0.13.2-py2.7.egg-info/installed-files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests-0.13.2-py2.7.egg-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/_oauth.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/async.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/defaults.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/big5freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/big5prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/chardistribution.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/charsetgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/charsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/codingstatemachine.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/escprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/escsm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/eucjpprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/euckrfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/euckrprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/euctwfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/euctwprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/gb2312freq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/gb2312prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/hebrewprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/jisfreq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/jpcntx.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/langbulgarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/langcyrillicmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/langgreekmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/langhebrewmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/langhungarianmodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/langthaimodel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/latin1prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/mbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/mbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/mbcssm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/sbcharsetprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/sbcsgroupprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/sjisprober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/universaldetector.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet2/utf8prober.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/common.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth1/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth1/rfc5849/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth1/rfc5849/parameters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth1/rfc5849/signature.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth1/rfc5849/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth2/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth2/draft25/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth2/draft25/parameters.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth2/draft25/tokens.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/oauthlib/oauth2/draft25/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/safe_mode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/backends.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/fields.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/fixtures/messages.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/forms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/managers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/templates/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/templates/umessages/base_message.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/templates/umessages/message_detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/templates/umessages/message_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/templates/umessages/message_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/templatetags/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/templatetags/umessages_tags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/tests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/tests/test_fields.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/tests/test_forms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/tests/test_managers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/tests/test_models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/tests/test_views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/contrib/umessages/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/decorators.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/fixtures/profiles.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/fixtures/users.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/forms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/bg/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/bg/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/de/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/de/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/de_du/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/de_du/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/el/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/el/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/es/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/es/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/fr/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/fr/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/gl/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/it/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/it/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/nb/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/nb/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/nl/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/nl/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/pl/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/pl/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/pt/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/pt/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/pt_BR/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/pt_BR/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/ru/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/ru/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/tr/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/tr/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/zh_CN/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/zh_CN/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/zh_TW/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/locale/zh_TW/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/mail.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/management/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/management/commands/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/management/commands/check_permissions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/management/commands/clean_expired.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/managers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/middleware.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/runtests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/runtests/runtests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/runtests/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/runtests/templates/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/runtests/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/activate_fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/activate_retry.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/activate_retry_success.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/base_userena.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/disabled.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/email_change_complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/email_confirm_complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/email_confirm_fail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/email_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/activation_email_message.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/activation_email_message.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/activation_email_subject.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/confirmation_email_message_new.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/confirmation_email_message_new.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/confirmation_email_message_old.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/confirmation_email_message_old.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/confirmation_email_subject_new.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/confirmation_email_subject_new.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/confirmation_email_subject_old.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/password_reset_message.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/emails/password_reset_message.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/password_complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/password_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/password_reset_complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/password_reset_confirm_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/password_reset_done.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/password_reset_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/profile_detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/profile_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/profile_list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/signin_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/signout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/signup_complete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/templates/userena/signup_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/profiles/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/profiles/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/test_backends.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/test_commands.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/test_privacy.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/tests_decorators.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/tests_forms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/tests_managers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/tests_middleware.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/tests_models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/tests_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/tests/tests_views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/views.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_imaging.so" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_imaging.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_imagingmath.so" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_imagingmath.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_imagingmorph.so" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_imagingmorph.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/_mysql.so" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/_mysql.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/local/bin" afterPath="$PROJECT_DIR$/env/local/bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/local/include" afterPath="$PROJECT_DIR$/env/local/include" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/local/lib" afterPath="$PROJECT_DIR$/env/local/lib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/migrations/0002_thumbnaildimensions.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/migrations/0002_thumbnaildimensions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/BdfFontFile.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/BdfFontFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/BmpImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/BmpImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/BufrStubImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/BufrStubImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ContainerIO.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ContainerIO.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/CurImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/CurImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/DcxImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/DcxImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/EpsImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/EpsImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ExifTags.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ExifTags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/FliImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/FliImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/FontFile.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/FontFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/FpxImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/FpxImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GbrImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GbrImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GdImageFile.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GdImageFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GifImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GifImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GimpGradientFile.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GimpGradientFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GimpPaletteFile.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GimpPaletteFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GribStubImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/GribStubImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/Hdf5StubImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/Hdf5StubImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/IcnsImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/IcnsImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/IcoImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/IcoImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/Image.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/Image.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageCms.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageCms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageColor.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageColor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageDraw.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageDraw.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageDraw2.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageDraw2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageEnhance.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageEnhance.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageFile.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageFilter.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageFilter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageFont.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageFont.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageGrab.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageGrab.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageMath.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageMath.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageMode.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageMode.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageMorph.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageMorph.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageOps.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageOps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImagePalette.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImagePalette.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageQt.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageQt.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageSequence.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageSequence.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageShow.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageShow.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageStat.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageStat.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageTk.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageTk.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageTransform.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageTransform.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageWin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImageWin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImtImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/ImtImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/IptcImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/IptcImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/Jpeg2KImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/Jpeg2KImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/JpegImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/JpegImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/JpegPresets.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/JpegPresets.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/McIdasImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/McIdasImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/MicImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/MicImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/MpegImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/MpegImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/MspImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/MspImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/OleFileIO.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/OleFileIO.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PSDraw.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PSDraw.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PaletteFile.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PaletteFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PalmImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PalmImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PcdImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PcdImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PcfFontFile.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PcfFontFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PcxImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PcxImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PixarImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PixarImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PngImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PngImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PpmImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PpmImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PsdImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PsdImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PyAccess.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/PyAccess.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/pip-1.5.6.dist-info/RECORD" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/pip-1.5.6.dist-info/RECORD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/setuptools-3.6.dist-info/RECORD" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/setuptools-3.6.dist-info/RECORD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/SgiImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/SgiImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/SunImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/SunImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/TarIO.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/TarIO.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/TgaImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/TgaImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/TiffImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/TiffImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/TiffTags.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/TiffTags.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/WalImageFile.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/WalImageFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/WebPImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/WebPImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/WmfImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/WmfImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/XVThumbImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/XVThumbImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/XbmImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/XbmImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/XpmImagePlugin.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/XpmImagePlugin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_binary.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_binary.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/_collections.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/_collections.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_util.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/PIL/_util.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/activate.csh" afterPath="$PROJECT_DIR$/env/bin/activate.csh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/activate.fish" afterPath="$PROJECT_DIR$/env/bin/activate.fish" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/activate" afterPath="$PROJECT_DIR$/env/bin/activate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/admin.py" afterPath="$PROJECT_DIR$/project/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/api.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/auth.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/auth.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/templates/base.html" afterPath="$PROJECT_DIR$/doulaap/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/big5freq.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/big5freq.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/big5prober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/big5prober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/cacert.pem" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/cacert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/certs.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/certs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/chardistribution.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/chardistribution.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donation/templates/charge.html" afterPath="$PROJECT_DIR$/donation/templates/charge.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/charsetgroupprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/charsetgroupprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/charsetprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/charsetprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/codingstatemachine.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/codingstatemachine.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/compat.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/compat.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/constants.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/constants.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/cookies.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/cookies.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/templates/create.html" afterPath="$PROJECT_DIR$/project/templates/create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/databases.py" afterPath="$PROJECT_DIR$/doulaap/databases.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/django-admin.py" afterPath="$PROJECT_DIR$/env/bin/django-admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/django-admin" afterPath="$PROJECT_DIR$/env/bin/django-admin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/doulaap.iml" afterPath="$PROJECT_DIR$/.idea/doulaap.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/easy_install-2.7" afterPath="$PROJECT_DIR$/env/bin/easy_install-2.7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/easy_install" afterPath="$PROJECT_DIR$/env/bin/easy_install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/templates/userena/email_form.html" afterPath="$PROJECT_DIR$/doulaap/templates/userena/email_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/escprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/escprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/escsm.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/escsm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/eucjpprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/eucjpprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/euckrfreq.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/euckrfreq.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/euckrprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/euckrprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/euctwfreq.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/euctwfreq.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/euctwprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/euctwprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/exceptions.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/exceptions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/exceptions.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/exceptions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/filepost.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/filepost.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donation/forms.py" afterPath="$PROJECT_DIR$/donation/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/gb2312freq.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/gb2312freq.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/gb2312prober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/gb2312prober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/hebrewprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/hebrewprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/hooks.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/hooks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/html2text" afterPath="$PROJECT_DIR$/env/bin/html2text" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/jisfreq.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/jisfreq.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/jpcntx.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/jpcntx.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langbulgarianmodel.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langbulgarianmodel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langcyrillicmodel.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langcyrillicmodel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langgreekmodel.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langgreekmodel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langhebrewmodel.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langhebrewmodel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langhungarianmodel.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langhungarianmodel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langthaimodel.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/langthaimodel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/latin1prober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/latin1prober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/mbcharsetprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/mbcharsetprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/mbcsgroupprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/mbcsgroupprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/mbcssm.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/mbcssm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/models.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/models.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/models.py" afterPath="$PROJECT_DIR$/project/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/templates/userena/password_form.html" afterPath="$PROJECT_DIR$/doulaap/templates/userena/password_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pilconvert.py" afterPath="$PROJECT_DIR$/env/bin/pilconvert.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pildriver.py" afterPath="$PROJECT_DIR$/env/bin/pildriver.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pilfile.py" afterPath="$PROJECT_DIR$/env/bin/pilfile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pilfont.py" afterPath="$PROJECT_DIR$/env/bin/pilfont.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pilprint.py" afterPath="$PROJECT_DIR$/env/bin/pilprint.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pip2.7" afterPath="$PROJECT_DIR$/env/bin/pip2.7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pip2" afterPath="$PROJECT_DIR$/env/bin/pip2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/bin/pip" afterPath="$PROJECT_DIR$/env/bin/pip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/poolmanager.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/poolmanager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/templates/userena/profile_detail.html" afterPath="$PROJECT_DIR$/doulaap/templates/userena/profile_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/templates/userena/profile_form.html" afterPath="$PROJECT_DIR$/doulaap/templates/userena/profile_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/templates/userena/profile_list.html" afterPath="$PROJECT_DIR$/doulaap/templates/userena/profile_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/templates/project.html" afterPath="$PROJECT_DIR$/project/templates/project.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/templates/projectpage.html" afterPath="$PROJECT_DIR$/project/templates/projectpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/templates/static/promo.html" afterPath="$PROJECT_DIR$/doulaap/templates/static/promo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/request.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/request.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/response.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/response.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/sbcharsetprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/sbcharsetprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/sbcsgroupprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/sbcsgroupprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/sessions.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/sessions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/settings.py" afterPath="$PROJECT_DIR$/doulaap/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/tests/settings.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/tests/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/tests/settings_old.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/tests/settings_old.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/packages/six.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/urllib3/packages/six.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/sjisprober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/sjisprober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/status_codes.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/status_codes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/structures.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/structures.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/tests/test_aliases.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/tests/test_aliases.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/tests/test_fields.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/tests/test_fields.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/universaldetector.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/universaldetector.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/urls.py" afterPath="$PROJECT_DIR$/doulaap/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/utf8prober.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/packages/chardet/utf8prober.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/utils.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/easy_thumbnails/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/utils.py" afterPath="$PROJECT_DIR$/env/lib/python2.7/site-packages/requests/utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donation/views.py" afterPath="$PROJECT_DIR$/donation/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profiles/views.py" afterPath="$PROJECT_DIR$/profiles/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/views.py" afterPath="$PROJECT_DIR$/project/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doulaap/wsgi.py" afterPath="$PROJECT_DIR$/doulaap/wsgi.py" />
+    </list>
     <ignored path="doulaap.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +438,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/doulaap$manage.coverage" NAME="manage Coverage Results" MODIFIED="1440661051779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/doulaap$urls.coverage" NAME="urls Coverage Results" MODIFIED="1418278102524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doulaap" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -23,11 +454,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1926">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2120" max-vertical-offset="2970">
+              <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -35,91 +466,98 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="projectpage.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="450">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="projectpage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/templates/projectpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3333333" vertical-offset="432" max-vertical-offset="2592">
-              <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="4878">
+              <caret line="72" column="98" selection-start-line="72" selection-start-column="98" selection-end-line="72" selection-end-column="98" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doulaap/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="2862">
-              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2108" max-vertical-offset="3258">
+              <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/templates/create.html">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/donation/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4444447" vertical-offset="717" max-vertical-offset="1494">
-              <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-              <folding />
+            <state vertical-scroll-proportion="0.47030878" vertical-offset="0" max-vertical-offset="1134">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doulaap/urls.py">
+      <file leaf-file-name="databases.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doulaap/databases.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="972">
-              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/templates/project.html">
+      <file leaf-file-name="doulaprofile_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doulaprofile/templates/doulaprofile_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42352942" vertical-offset="324" max-vertical-offset="1476">
-              <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="576">
+              <caret line="18" column="98" selection-start-line="18" selection-start-column="98" selection-end-line="18" selection-end-column="98" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/models.py">
+      <file leaf-file-name="doulaprofile_list_org.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doulaprofile/templates/doulaprofile_list_org.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1098">
-              <caret line="24" column="10" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="10" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="1314">
+              <caret line="24" column="73" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="73" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="charge.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/donation/templates/charge.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.0" vertical-offset="378" max-vertical-offset="1044">
-              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile_form.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/profile_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.6666665" vertical-offset="378" max-vertical-offset="1044">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doulaap/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="19.333334" vertical-offset="540" max-vertical-offset="1386">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="3474">
+              <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="promo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doulaap/templates/static/promo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2592" max-vertical-offset="4356">
+              <caret line="158" column="119" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="119" />
               <folding />
             </state>
           </provider>
@@ -132,41 +570,42 @@
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/doulaap/templates/static/promo.html" />
-        <option value="$PROJECT_DIR$/doulaap/databases.py" />
-        <option value="$PROJECT_DIR$/doulaap/templates/userena/profile_detail.html" />
-        <option value="$PROJECT_DIR$/doulaap/static/css/master.css" />
-        <option value="$PROJECT_DIR$/doulaap/templates/base.html" />
-        <option value="$PROJECT_DIR$/project/models.py" />
-        <option value="$PROJECT_DIR$/pledge/models.py" />
-        <option value="$PROJECT_DIR$/donation/admin.py" />
-        <option value="$PROJECT_DIR$/donation/models.py" />
-        <option value="$PROJECT_DIR$/project/templates/pledge.html" />
-        <option value="$PROJECT_DIR$/profiles/forms.py" />
-        <option value="$PROJECT_DIR$/doulaap/templates/userena/profile_form.html" />
-        <option value="$PROJECT_DIR$/donation/urls.py" />
-        <option value="$PROJECT_DIR$/donation/forms.py" />
         <option value="$PROJECT_DIR$/donation/views.py" />
-        <option value="$PROJECT_DIR$/donation/templates/charge.html" />
-        <option value="$PROJECT_DIR$/doulaap/urls.py" />
+        <option value="$PROJECT_DIR$/doulaap/templates/static/aboutus.html" />
+        <option value="$PROJECT_DIR$/doulaap/templates/userena/profile_form.html" />
+        <option value="$PROJECT_DIR$/doulaap/templates/static/howitwork.html" />
+        <option value="$PROJECT_DIR$/doulaap/templates/static/promo.html" />
+        <option value="$PROJECT_DIR$/doulaap/templates/static/privacy.html" />
+        <option value="$PROJECT_DIR$/doulaap/templates/static/terms.html" />
+        <option value="$PROJECT_DIR$/doulaap/templates/static/testimonial.html" />
+        <option value="$PROJECT_DIR$/doulaap/templates/base1.html" />
         <option value="$PROJECT_DIR$/project/templates/create.html" />
-        <option value="$PROJECT_DIR$/doulaap/settings.py" />
-        <option value="$PROJECT_DIR$/project/views.py" />
+        <option value="$PROJECT_DIR$/doulaap/templates/base.html" />
         <option value="$PROJECT_DIR$/project/templates/projectpage.html" />
-        <option value="$PROJECT_DIR$/project/templates/project.html" />
+        <option value="$PROJECT_DIR$/project/views.py" />
+        <option value="$PROJECT_DIR$/doulaprofile/templates/doulaprofile_list_org.html" />
+        <option value="$PROJECT_DIR$/doulaprofile/templates/doulaprofile_list.html" />
+        <option value="$PROJECT_DIR$/doulaap/databases.py" />
+        <option value="$PROJECT_DIR$/doulaap/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
-    <option name="y" value="-3" />
-    <option name="width" value="1329" />
-    <option name="height" value="771" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="43" />
+    <option name="y" value="21" />
+    <option name="width" value="1323" />
+    <option name="height" value="747" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -192,7 +631,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,173 +659,100 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="userena" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="donation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doulaap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="donation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="167" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="90" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="96" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="848" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="90" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="96" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="943" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doulaprofile/templates" />
+      <recent name="$PROJECT_DIR$/project/templates" />
+      <recent name="$PROJECT_DIR$/doulaap/static/css" />
+      <recent name="$PROJECT_DIR$/doulaap/static/js/vendor" />
+      <recent name="$PROJECT_DIR$/doulaap/templates/static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.manage">
+    <configuration default="false" name="urls" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/doulaap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/doulaap/urls.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonCover" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonCover" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -400,8 +765,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -414,6 +795,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -436,6 +818,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -450,6 +833,23 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -460,6 +860,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -479,6 +880,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -486,6 +888,26 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
@@ -498,6 +920,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="doulaap" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -509,7 +932,24 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.urls" />
+      <item index="1" class="java.lang.String" itemvalue="Python.manage" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.manage" />
+        <item index="1" class="java.lang.String" itemvalue="Python.urls" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -519,30 +959,34 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="168a319d-aa11-4d5f-98ec-ef4c1fda44ea" name="Default" comment="" />
       <created>1412072516638</created>
+      <option name="number" value="Default" />
       <updated>1412072516638</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="-3" width="1329" height="771" extended-state="6" />
+    <frame x="43" y="21" width="1323" height="747" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24905944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31554878" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21233411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24981017" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39823008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -563,225 +1007,353 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/doulaap/databases.py">
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/profile_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.34615386" vertical-offset="0" max-vertical-offset="918">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/donation/forms.py">
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/password_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="2142">
-          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
-          <folding />
+        <state vertical-scroll-proportion="-14.0" vertical-offset="162" max-vertical-offset="1368">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/project.html">
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/password_reset_confirm_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="810">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
+        <state vertical-scroll-proportion="8.0" vertical-offset="216" max-vertical-offset="1062">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/views.py">
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/password_reset_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1692">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/signin_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0" vertical-offset="162" max-vertical-offset="1728">
+          <caret line="27" column="121" selection-start-line="27" selection-start-column="121" selection-end-line="27" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="859">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaprofile/templates/doulaprofile_create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1656">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/pledge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3564">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1098">
-          <caret line="39" column="47" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="47" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+          <caret line="21" column="90" selection-start-line="19" selection-start-column="3" selection-end-line="21" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/static/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1206">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2579" max-vertical-offset="3654">
+          <caret line="174" column="35" selection-start-line="174" selection-start-column="35" selection-end-line="174" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/donation/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="872">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userena/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="2070">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/signup_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.62963" vertical-offset="118" max-vertical-offset="1332">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5472973" vertical-offset="0" max-vertical-offset="1188">
+          <caret line="24" column="65" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.21283785" vertical-offset="162" max-vertical-offset="828">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaprofile/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="872">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaprofile/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5777027" vertical-offset="0" max-vertical-offset="592">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/projectpage.html">
+    <entry file="file://$PROJECT_DIR$/env/local/lib/python2.7/site-packages/django/forms/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="2160">
-          <caret line="47" column="64" selection-start-line="46" selection-start-column="12" selection-end-line="47" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.14518002" vertical-offset="7201" max-vertical-offset="21726">
+          <caret line="422" column="8" selection-start-line="422" selection-start-column="8" selection-end-line="422" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/local/lib/python2.7/site-packages/django/db/models/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="5023" max-vertical-offset="18396">
+          <caret line="321" column="6" selection-start-line="321" selection-start-column="6" selection-end-line="321" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userena/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3693" max-vertical-offset="7308">
+          <caret line="236" column="35" selection-start-line="236" selection-start-column="35" selection-end-line="236" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userena/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2915215" vertical-offset="11719" max-vertical-offset="14328">
+          <caret line="691" column="32" selection-start-line="691" selection-start-column="15" selection-end-line="691" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/profile_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3177458" vertical-offset="383" max-vertical-offset="1404">
+          <caret line="36" column="105" selection-start-line="36" selection-start-column="105" selection-end-line="36" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/profile_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.21582733" vertical-offset="540" max-vertical-offset="1908">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userena/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24738675" vertical-offset="3675" max-vertical-offset="4536">
+          <caret line="219" column="6" selection-start-line="219" selection-start-column="6" selection-end-line="219" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7065421" vertical-offset="738" max-vertical-offset="1962">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaprofile/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1725979" vertical-offset="169" max-vertical-offset="1152">
+          <caret line="54" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/static/aboutus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0" vertical-offset="378" max-vertical-offset="4446">
+          <caret line="39" column="25" selection-start-line="36" selection-start-column="0" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/static/howitwork.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0" vertical-offset="324" max-vertical-offset="2808">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/static/privacy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0" vertical-offset="270" max-vertical-offset="2808">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/static/terms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.0" vertical-offset="378" max-vertical-offset="2808">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/static/testimonial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="2808">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/templates/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1148" max-vertical-offset="2340">
+          <caret line="82" column="3" selection-start-line="82" selection-start-column="3" selection-end-line="82" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/donation/templates/charge.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="774">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="20" selection-end-column="14" />
-          <folding />
+        <state vertical-scroll-proportion="-0.5179856" vertical-offset="918" max-vertical-offset="3474">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/settings.py">
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/base1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1386" max-vertical-offset="2844">
-          <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/databases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="288">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/donation/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1382" max-vertical-offset="2142">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.4532374" vertical-offset="324" max-vertical-offset="2088">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doulaap/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/project.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="810">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="3474">
+          <caret line="62" column="50" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/views.py">
+    <entry file="file://$PROJECT_DIR$/userena/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1692">
-          <caret line="55" column="43" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1116">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2268">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/project/templates/projectpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1529" max-vertical-offset="2160">
-          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="4878">
+          <caret line="72" column="98" selection-start-line="72" selection-start-column="98" selection-end-line="72" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/static/css/master.css">
+    <entry file="file://$PROJECT_DIR$/donation/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10062" max-vertical-offset="16362">
-          <caret line="573" column="1" selection-start-line="573" selection-start-column="1" selection-end-line="573" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0071174377" vertical-offset="320" max-vertical-offset="990">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/create.html">
+    <entry file="file://$PROJECT_DIR$/donation/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1494">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        <state vertical-scroll-proportion="-0.33043477" vertical-offset="1486" max-vertical-offset="2142">
+          <caret line="77" column="8" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/urls.py">
+    <entry file="file://$PROJECT_DIR$/project/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="1026">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2120" max-vertical-offset="2970">
+          <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doulaap/templates/static/promo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2592" max-vertical-offset="4356">
+          <caret line="158" column="119" selection-start-line="158" selection-start-column="24" selection-end-line="158" selection-end-column="119" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/profile_list.html">
+    <entry file="file://$PROJECT_DIR$/doulaprofile/templates/doulaprofile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29411766" vertical-offset="77" max-vertical-offset="738">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="2.0186915" vertical-offset="432" max-vertical-offset="2232">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/views.py">
+    <entry file="file://$PROJECT_DIR$/doulaprofile/templates/doulaprofile_list_org.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15075377" vertical-offset="0" max-vertical-offset="14760">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="149" max-vertical-offset="1314">
+          <caret line="24" column="73" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/models.py">
+    <entry file="file://$PROJECT_DIR$/doulaprofile/templates/doulaprofile_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.048576213" vertical-offset="1159" max-vertical-offset="7308">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/lib/python2.7/site-packages/userena/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.5980706" vertical-offset="0" max-vertical-offset="4518">
-          <caret line="228" column="41" selection-start-line="228" selection-start-column="41" selection-end-line="228" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/password_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.16883117" vertical-offset="104" max-vertical-offset="720">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/static/css/master.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="10062" max-vertical-offset="16362">
-          <caret line="573" column="1" selection-start-line="573" selection-start-column="1" selection-end-line="573" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35064936" vertical-offset="0" max-vertical-offset="616">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/donation/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/donation/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/donation/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="576">
+          <caret line="18" column="98" selection-start-line="18" selection-start-column="98" selection-end-line="18" selection-end-column="98" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -793,175 +1365,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/pledge.html">
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="306" max-vertical-offset="3564">
-          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/donation/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1134" max-vertical-offset="2142">
-          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/donation/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="684">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/donation/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08231708" vertical-offset="0" max-vertical-offset="656">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/email_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/base_userena.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="144">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31968504" vertical-offset="355" max-vertical-offset="990">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24695122" vertical-offset="0" max-vertical-offset="774">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/templates/static/promo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6666665" vertical-offset="0" max-vertical-offset="666">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.333334" vertical-offset="540" max-vertical-offset="1386">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/profile_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6067227" vertical-offset="89" max-vertical-offset="846">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/templates/userena/profile_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.6666665" vertical-offset="378" max-vertical-offset="1044">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/donation/templates/charge.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.0" vertical-offset="378" max-vertical-offset="1044">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1098">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doulaap/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="972">
-          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4444447" vertical-offset="717" max-vertical-offset="1494">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-          <folding />
+        <state vertical-scroll-proportion="0.28173912" vertical-offset="0" max-vertical-offset="575">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doulaap/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="2862">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2108" max-vertical-offset="3258">
+          <caret line="130" column="16" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/views.py">
+    <entry file="file://$PROJECT_DIR$/donation/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1926">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.47030878" vertical-offset="0" max-vertical-offset="1134">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/projectpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333" vertical-offset="432" max-vertical-offset="2592">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/templates/project.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42352942" vertical-offset="324" max-vertical-offset="1476">
-          <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-

@@ -1,0 +1,40 @@
+{% extends 'userena/base_userena.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Signup almost done!" %}{% endblock %}
+
+{% block content_title %}<h2>{% trans "Signup" %}</h2>{% endblock %}
+
+{% block content %}
+
+{% if messages %}
+    <div class="alert alert-info">
+        {% for message in messages %}
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+        {{ message }}
+        {% endfor %}
+    </div>
+{% endif %}
+
+<section id="trending">
+    <div class="container">
+      <div class="row heading">
+        <div class="col-md-12">
+          <h3 class="pull-left">Thank you for signing up with us!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            {% if userena_activation_required %}
+            <p>{% blocktrans %}You have been sent an e-mail with an activation link to the supplied email.{% endblocktrans %}</p>
+            {% else  %}
+            <p>{% blocktrans %}You can now use the supplied credentials to signin.{% endblocktrans %}</p>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+{% endblock %}

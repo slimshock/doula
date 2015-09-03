@@ -1,4 +1,4 @@
-#!/home/slimshock/django/doulaap/env/bin/python
+#!/var/www/html/doulaap/env/bin/python
 from django.core import management
 
 if __name__ == "__main__":
